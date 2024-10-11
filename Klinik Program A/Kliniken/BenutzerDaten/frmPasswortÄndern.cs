@@ -59,12 +59,17 @@ namespace Kliniken
 
         private bool _ValidateFelder()
         {
+            if(string.IsNullOrEmpty(txtNeuesPasswort.Text) || string.IsNullOrEmpty(txtPasswortBestätigung.Text))
+            {
+                MessageBox.Show("die Eingabefelder dürfen nicht leer sein");
+                return false;
+            }
             string neuesPasswort = txtNeuesPasswort.Text.Trim();
             string passwortBestätigen = txtPasswortBestätigung.Text.Trim();
 
             if(passwortBestätigen != neuesPasswort)
             {
-                MessageBox.Show("PasswortBestätigen muss das neue Passwort entsprechen", "Fehlermeldung",
+                MessageBox.Show("Das Passwortbestätigen muss dem neuen Passwort entsprechen", "Fehlermeldung",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }

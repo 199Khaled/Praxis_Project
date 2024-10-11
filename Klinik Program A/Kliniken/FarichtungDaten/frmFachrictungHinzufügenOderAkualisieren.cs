@@ -50,6 +50,11 @@ namespace Kliniken
 
         private void btnHinzufügen_Click(object sender, EventArgs e)
         {
+            if(string.IsNullOrEmpty(txtFachrichtung.Text))
+            {
+                MessageBox.Show("Bitte geben sie eine Fachritung in das Eingabefeld ein!");
+                return;
+            }
             switch(_Mode)
             {
                 case enMode.Addnew:

@@ -67,7 +67,7 @@ namespace Kliniken
 
         private void btnFachrichtungAktualisieren_Click(object sender, EventArgs e)
         {
-            if (cbFachrichtungen.SelectedItem != null)
+            if (!string.IsNullOrEmpty(cbFachrichtungen.Text))
             {
 
                 string AlteAusgewähltes_Item

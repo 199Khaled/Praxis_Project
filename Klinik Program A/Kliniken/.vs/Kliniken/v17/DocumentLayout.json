@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|c:\\users\\hamssa\\desktop\\praxis_project\\klinik program a\\kliniken\\benutzerdaten\\frmpasswort\u00E4ndern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:benutzerdaten\\frmpasswort\u00E4ndern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|c:\\users\\hamssa\\desktop\\praxis_project\\klinik program a\\kliniken\\benutzerdaten\\frmpasswort\u00E4ndern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:benutzerdaten\\frmpasswort\u00E4ndern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|c:\\users\\hamssa\\desktop\\praxis_project\\klinik program a\\kliniken\\farichtungdaten\\frmfachrictunghinzuf\u00FCgenoderakualisieren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:farichtungdaten\\frmfachrictunghinzuf\u00FCgenoderakualisieren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|c:\\users\\hamssa\\desktop\\praxis_project\\klinik program a\\kliniken\\farichtungdaten\\frmfachrictunghinzuf\u00FCgenoderakualisieren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:farichtungdaten\\frmfachrictunghinzuf\u00FCgenoderakualisieren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|c:\\users\\hamssa\\desktop\\praxis_project\\klinik program a\\kliniken\\farichtungdaten\\frmfachrichtungenlisteanzeigen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:farichtungdaten\\frmfachrichtungenlisteanzeigen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|c:\\users\\hamssa\\desktop\\praxis_project\\klinik program a\\kliniken\\farichtungdaten\\frmfachrichtungenlisteanzeigen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:farichtungdaten\\frmfachrichtungenlisteanzeigen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|c:\\users\\hamssa\\desktop\\praxis_project\\klinik program a\\kliniken\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -42,8 +66,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 237,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,7 +91,82 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "frmPasswort\u00C4ndern.cs",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\BenutzerDaten\\frmPasswort\u00C4ndern.cs",
+              "RelativeDocumentMoniker": "BenutzerDaten\\frmPasswort\u00C4ndern.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\BenutzerDaten\\frmPasswort\u00C4ndern.cs",
+              "RelativeToolTip": "BenutzerDaten\\frmPasswort\u00C4ndern.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAowEcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:44:15.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmPasswort\u00C4ndern.cs [Entwurf]",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\BenutzerDaten\\frmPasswort\u00C4ndern.cs",
+              "RelativeDocumentMoniker": "BenutzerDaten\\frmPasswort\u00C4ndern.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\BenutzerDaten\\frmPasswort\u00C4ndern.cs [Entwurf]",
+              "RelativeToolTip": "BenutzerDaten\\frmPasswort\u00C4ndern.cs [Entwurf]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:44:13.401Z",
+              "EditorCaption": " [Entwurf]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmFachrictungHinzuf\u00FCgenOderAkualisieren.cs",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\FarichtungDaten\\frmFachrictungHinzuf\u00FCgenOderAkualisieren.cs",
+              "RelativeDocumentMoniker": "FarichtungDaten\\frmFachrictungHinzuf\u00FCgenOderAkualisieren.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\FarichtungDaten\\frmFachrictungHinzuf\u00FCgenOderAkualisieren.cs",
+              "RelativeToolTip": "FarichtungDaten\\frmFachrictungHinzuf\u00FCgenOderAkualisieren.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAqwDcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:41:55.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmFachrictungHinzuf\u00FCgenOderAkualisieren.cs [Entwurf]",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\FarichtungDaten\\frmFachrictungHinzuf\u00FCgenOderAkualisieren.cs",
+              "RelativeDocumentMoniker": "FarichtungDaten\\frmFachrictungHinzuf\u00FCgenOderAkualisieren.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\FarichtungDaten\\frmFachrictungHinzuf\u00FCgenOderAkualisieren.cs [Entwurf]",
+              "RelativeToolTip": "FarichtungDaten\\frmFachrictungHinzuf\u00FCgenOderAkualisieren.cs [Entwurf]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:41:39.987Z",
+              "EditorCaption": " [Entwurf]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmFachrichtungenListeAnzeigen.cs",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\FarichtungDaten\\frmFachrichtungenListeAnzeigen.cs",
+              "RelativeDocumentMoniker": "FarichtungDaten\\frmFachrichtungenListeAnzeigen.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\FarichtungDaten\\frmFachrichtungenListeAnzeigen.cs",
+              "RelativeToolTip": "FarichtungDaten\\frmFachrichtungenListeAnzeigen.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAqwEUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:40:21.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmFachrichtungenListeAnzeigen.cs [Entwurf]",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\FarichtungDaten\\frmFachrichtungenListeAnzeigen.cs",
+              "RelativeDocumentMoniker": "FarichtungDaten\\frmFachrichtungenListeAnzeigen.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\FarichtungDaten\\frmFachrichtungenListeAnzeigen.cs [Entwurf]",
+              "RelativeToolTip": "FarichtungDaten\\frmFachrichtungenListeAnzeigen.cs [Entwurf]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:40:15.25Z",
+              "EditorCaption": " [Entwurf]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "clsPatientDatenZugriff.cs",
               "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs",
@@ -79,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "clsMitarbeiterDatenZugriff.cs",
               "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsMitarbeiterDatenZugriff.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsMitarbeiterDatenZugriff.cs",
@@ -91,20 +190,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCEAAAAZAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-30T09:52:17.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ctrMitarbeiterEinf\u00FCgen.cs",
               "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\Contors\\ctrMitarbeiterEinf\u00FCgen.cs",
               "RelativeDocumentMoniker": "MitarbeiterDaten\\Contors\\ctrMitarbeiterEinf\u00FCgen.cs",
@@ -116,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "ctrPersonFilter.cs",
               "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\PersonDaten\\Controls\\ctrPersonFilter.cs",
               "RelativeDocumentMoniker": "PersonDaten\\Controls\\ctrPersonFilter.cs",
@@ -128,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "frmAktualisierenUndNeuenMitarbeiterHinzuf\u00FCgen.cs",
               "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\frmAktualisierenUndNeuenMitarbeiterHinzuf\u00FCgen.cs",
               "RelativeDocumentMoniker": "MitarbeiterDaten\\frmAktualisierenUndNeuenMitarbeiterHinzuf\u00FCgen.cs",
@@ -140,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "frmMitarbeiterListeAnzeigen.cs",
               "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
               "RelativeDocumentMoniker": "MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
@@ -152,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "frmMitarbeiterListeAnzeigen.cs [Entwurf]",
               "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
               "RelativeDocumentMoniker": "MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
@@ -163,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "clsPersonal.cs",
               "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinkDatenSchicht\\clsPersonal.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Khaled\\Desktop\\Klinik Program\\KlinkDatenSchicht\\clsPersonal.cs",
@@ -176,7 +275,7 @@
           ]
         },
         {
-          "DockedWidth": 85,
+          "DockedWidth": 48,
           "SelectedChildIndex": -1,
           "Children": [
             {
