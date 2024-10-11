@@ -1,39 +1,39 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\",
+  "WorkspaceRootPath": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|c:\\users\\hamssa\\desktop\\praxis_project\\klinik program a\\kliniken\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBE3D48-A083-4E39-9E30-592D0C26F2C8}|..\\KlinikDatenZugriffsSchicht\\KlinikDatenZugriffsSchicht.csproj|c:\\users\\khaled\\desktop\\klinik program\\klinikdatenzugriffsschicht\\clspatientdatenzugriff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\mitarbeiterdaten\\contors\\ctrmitarbeitereinf\u00FCgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\mitarbeiterdaten\\contors\\ctrmitarbeitereinf\u00FCgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:mitarbeiterdaten\\contors\\ctrmitarbeitereinf\u00FCgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBE3D48-A083-4E39-9E30-592D0C26F2C8}|..\\KlinikDatenZugriffsSchicht\\KlinikDatenZugriffsSchicht.csproj|c:\\users\\khaled\\desktop\\klinik program\\klinikdatenzugriffsschicht\\clsmitarbeiterdatenzugriff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\persondaten\\controls\\ctrpersonfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\persondaten\\controls\\ctrpersonfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:persondaten\\controls\\ctrpersonfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\mitarbeiterdaten\\frmmitarbeiterlisteanzeigen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\mitarbeiterdaten\\frmmitarbeiterlisteanzeigen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:mitarbeiterdaten\\frmmitarbeiterlisteanzeigen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\mitarbeiterdaten\\frmaktualisierenundneuenmitarbeiterhinzuf\u00FCgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\mitarbeiterdaten\\frmaktualisierenundneuenmitarbeiterhinzuf\u00FCgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:mitarbeiterdaten\\frmaktualisierenundneuenmitarbeiterhinzuf\u00FCgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\mitarbeiterdaten\\frmmitarbeiterlisteanzeigen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\mitarbeiterdaten\\frmmitarbeiterlisteanzeigen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C2F9991C-D020-4C79-8DD3-F28D85F52ECE}|Kliniken.csproj|solutionrelative:mitarbeiterdaten\\frmmitarbeiterlisteanzeigen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1995A428-3213-4388-85A6-285C1D37B46C}|..\\KlinkDatenSchicht\\KlinkDatenSchicht.csproj|c:\\users\\khaled\\desktop\\klinik program\\klinkdatenschicht\\clspersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsMitarbeiterDatenZugriff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinkDatenSchicht\\clsPersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,29 +43,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsPatientDatenZugriff.cs",
-              "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs",
-              "RelativeDocumentMoniker": "..\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs",
-              "ToolTip": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs",
-              "RelativeToolTip": "..\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T20:02:11.871Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "clsPatientDatenZugriff.cs",
+              "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs",
+              "ToolTip": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsPatientDatenZugriff.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T20:02:11.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "clsMitarbeiterDatenZugriff.cs",
               "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsMitarbeiterDatenZugriff.cs",
-              "RelativeDocumentMoniker": "..\\KlinikDatenZugriffsSchicht\\clsMitarbeiterDatenZugriff.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsMitarbeiterDatenZugriff.cs",
               "ToolTip": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsMitarbeiterDatenZugriff.cs",
-              "RelativeToolTip": "..\\KlinikDatenZugriffsSchicht\\clsMitarbeiterDatenZugriff.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Khaled\\Desktop\\Klinik Program\\KlinikDatenZugriffsSchicht\\clsMitarbeiterDatenZugriff.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAAAEcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-30T14:41:05.589Z"
@@ -74,9 +93,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\Program.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAgwB0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -85,11 +104,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ctrMitarbeiterEinf\u00FCgen.cs",
-              "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\MitarbeiterDaten\\Contors\\ctrMitarbeiterEinf\u00FCgen.cs",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\Contors\\ctrMitarbeiterEinf\u00FCgen.cs",
               "RelativeDocumentMoniker": "MitarbeiterDaten\\Contors\\ctrMitarbeiterEinf\u00FCgen.cs",
-              "ToolTip": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\MitarbeiterDaten\\Contors\\ctrMitarbeiterEinf\u00FCgen.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\Contors\\ctrMitarbeiterEinf\u00FCgen.cs",
               "RelativeToolTip": "MitarbeiterDaten\\Contors\\ctrMitarbeiterEinf\u00FCgen.cs",
               "ViewState": "AQIAAMEAAAAAAAAAAAAAAMwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,11 +116,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ctrPersonFilter.cs",
-              "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\PersonDaten\\Controls\\ctrPersonFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\PersonDaten\\Controls\\ctrPersonFilter.cs",
               "RelativeDocumentMoniker": "PersonDaten\\Controls\\ctrPersonFilter.cs",
-              "ToolTip": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\PersonDaten\\Controls\\ctrPersonFilter.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\PersonDaten\\Controls\\ctrPersonFilter.cs",
               "RelativeToolTip": "PersonDaten\\Controls\\ctrPersonFilter.cs",
               "ViewState": "AQIAAJIAAAAAAAAAAAAAAJ0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -109,11 +128,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "frmAktualisierenUndNeuenMitarbeiterHinzuf\u00FCgen.cs",
-              "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\MitarbeiterDaten\\frmAktualisierenUndNeuenMitarbeiterHinzuf\u00FCgen.cs",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\frmAktualisierenUndNeuenMitarbeiterHinzuf\u00FCgen.cs",
               "RelativeDocumentMoniker": "MitarbeiterDaten\\frmAktualisierenUndNeuenMitarbeiterHinzuf\u00FCgen.cs",
-              "ToolTip": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\MitarbeiterDaten\\frmAktualisierenUndNeuenMitarbeiterHinzuf\u00FCgen.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\frmAktualisierenUndNeuenMitarbeiterHinzuf\u00FCgen.cs",
               "RelativeToolTip": "MitarbeiterDaten\\frmAktualisierenUndNeuenMitarbeiterHinzuf\u00FCgen.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAqwDAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -121,11 +140,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "frmMitarbeiterListeAnzeigen.cs",
-              "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
               "RelativeDocumentMoniker": "MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
-              "ToolTip": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
+              "ToolTip": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
               "RelativeToolTip": "MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAAADABAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -133,12 +152,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "frmMitarbeiterListeAnzeigen.cs [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
+              "DocumentMoniker": "C:\\Users\\Hamssa\\Desktop\\Praxis_Project\\Klinik Program A\\Kliniken\\MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
               "RelativeDocumentMoniker": "MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs",
               "ToolTip": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\Kliniken\\MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs [Entwurf]",
-              "RelativeToolTip": "MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs [Entwurf]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Khaled\\Desktop\\Klinik Program\\Kliniken\\MitarbeiterDaten\\frmMitarbeiterListeAnzeigen.cs [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T06:29:09.846Z"
             },
@@ -147,12 +166,22 @@
               "DocumentIndex": 8,
               "Title": "clsPersonal.cs",
               "DocumentMoniker": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinkDatenSchicht\\clsPersonal.cs",
-              "RelativeDocumentMoniker": "..\\KlinkDatenSchicht\\clsPersonal.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Khaled\\Desktop\\Klinik Program\\KlinkDatenSchicht\\clsPersonal.cs",
               "ToolTip": "C:\\Users\\Khaled\\Desktop\\Klinik Program\\KlinkDatenSchicht\\clsPersonal.cs",
-              "RelativeToolTip": "..\\KlinkDatenSchicht\\clsPersonal.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Khaled\\Desktop\\Klinik Program\\KlinkDatenSchicht\\clsPersonal.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T09:27:30.385Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 85,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }
