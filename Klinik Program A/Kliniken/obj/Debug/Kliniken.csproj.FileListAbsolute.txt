@@ -106,7 +106,6 @@ C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Klini
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmDatumListeForPatientenAnzeigen.resources
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmLoginScreen.resources
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmPasswortÄndern.resources
-C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmMitarbeiterListeAnzeigen.resources
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmPatientDatenAnzeigen.resources
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.ctrPersonenDatenMitFilter.resources
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmFachrichtungenListeAnzeigen.resources

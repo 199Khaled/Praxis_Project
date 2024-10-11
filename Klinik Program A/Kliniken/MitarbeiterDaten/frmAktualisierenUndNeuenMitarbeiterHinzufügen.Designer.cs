@@ -33,6 +33,8 @@
             this.btnAbbrechen = new System.Windows.Forms.Button();
             this.ctrPersonFilter1 = new Kliniken.ctrPersonFilter();
             this.ctrMitarbeiterEinfügen1 = new Kliniken.ctrMitarbeiterEinfügen();
+            this.ctrMitarbeiterEinfügen2 = new Kliniken.ctrMitarbeiterEinfügen();
+            this.ctrMitarbeiterEinfügen3 = new Kliniken.ctrMitarbeiterEinfügen();
             this.SuspendLayout();
             // 
             // lblTitel
@@ -91,12 +93,33 @@
             this.ctrMitarbeiterEinfügen1.TabIndex = 4;
             this.ctrMitarbeiterEinfügen1.OnMitarbeiterSelectedID += new System.Action<int>(this.ctrMitarbeiterEinfügen1_OnMitarbeiterSelectedID);
             // 
+            // ctrMitarbeiterEinfügen2
+            // 
+            this.ctrMitarbeiterEinfügen2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctrMitarbeiterEinfügen2.Location = new System.Drawing.Point(0, 0);
+            this.ctrMitarbeiterEinfügen2.Margin = new System.Windows.Forms.Padding(4);
+            this.ctrMitarbeiterEinfügen2.Name = "ctrMitarbeiterEinfügen2";
+            this.ctrMitarbeiterEinfügen2.Size = new System.Drawing.Size(1031, 529);
+            this.ctrMitarbeiterEinfügen2.TabIndex = 6;
+            // 
+            // ctrMitarbeiterEinfügen3
+            // 
+            this.ctrMitarbeiterEinfügen3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctrMitarbeiterEinfügen3.Location = new System.Drawing.Point(8, 8);
+            this.ctrMitarbeiterEinfügen3.Margin = new System.Windows.Forms.Padding(4);
+            this.ctrMitarbeiterEinfügen3.Name = "ctrMitarbeiterEinfügen3";
+            this.ctrMitarbeiterEinfügen3.Size = new System.Drawing.Size(1031, 529);
+            this.ctrMitarbeiterEinfügen3.TabIndex = 7;
+            this.ctrMitarbeiterEinfügen3.Load += new System.EventHandler(this.ctrMitarbeiterEinfügen3_Load);
+            // 
             // frmAktualisierenUndNeuenMitarbeiterHinzufügen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1045, 799);
+            this.Controls.Add(this.ctrMitarbeiterEinfügen3);
+            this.Controls.Add(this.ctrMitarbeiterEinfügen2);
             this.Controls.Add(this.ctrPersonFilter1);
             this.Controls.Add(this.ctrMitarbeiterEinfügen1);
             this.Controls.Add(this.btnAbbrechen);
@@ -116,5 +139,7 @@
         private System.Windows.Forms.Button btnAbbrechen;
         private ctrMitarbeiterEinfügen ctrMitarbeiterEinfügen1;
         private ctrPersonFilter ctrPersonFilter1;
+        private ctrMitarbeiterEinfügen ctrMitarbeiterEinfügen2;
+        private ctrMitarbeiterEinfügen ctrMitarbeiterEinfügen3;
     }
 }

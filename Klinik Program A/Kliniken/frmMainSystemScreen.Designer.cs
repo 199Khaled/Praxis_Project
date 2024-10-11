@@ -31,18 +31,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.personalVerwaltungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PersonenListeAnzeigentoolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mitarbeiterverwaltungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MitarbeiterlistetoolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.NeuerMitarbeiterImportierentoolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.AlsReinigungsPersonlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alsKüchenPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alsTransportdienstToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alsSicherheitsdienstToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mitarbeiterExportierenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vonReinigungsPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vonKüchenPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vonTransportdienstToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vonSicherheitsdienstToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientVerwaltungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientenListeAnzeigenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.neuenPatientenHinzufügenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,8 +71,7 @@
             // 
             this.personalVerwaltungToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.personalVerwaltungToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PersonenListeAnzeigentoolStripMenuItem1,
-            this.mitarbeiterverwaltungToolStripMenuItem});
+            this.PersonenListeAnzeigentoolStripMenuItem1});
             this.personalVerwaltungToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.personalVerwaltungToolStripMenuItem.Name = "personalVerwaltungToolStripMenuItem";
             this.personalVerwaltungToolStripMenuItem.Size = new System.Drawing.Size(234, 92);
@@ -98,99 +85,6 @@
             this.PersonenListeAnzeigentoolStripMenuItem1.Size = new System.Drawing.Size(393, 70);
             this.PersonenListeAnzeigentoolStripMenuItem1.Text = "Personen Liste anzeigen";
             this.PersonenListeAnzeigentoolStripMenuItem1.Click += new System.EventHandler(this.PersonenListeAnzeigentoolStripMenuItem1_Click);
-            // 
-            // mitarbeiterverwaltungToolStripMenuItem
-            // 
-            this.mitarbeiterverwaltungToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MitarbeiterlistetoolStripMenuItem1,
-            this.NeuerMitarbeiterImportierentoolStripMenuItem2,
-            this.mitarbeiterExportierenToolStripMenuItem});
-            this.mitarbeiterverwaltungToolStripMenuItem.Image = global::Kliniken.Properties.Resources.Drivers_64;
-            this.mitarbeiterverwaltungToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.mitarbeiterverwaltungToolStripMenuItem.Name = "mitarbeiterverwaltungToolStripMenuItem";
-            this.mitarbeiterverwaltungToolStripMenuItem.Size = new System.Drawing.Size(393, 70);
-            this.mitarbeiterverwaltungToolStripMenuItem.Text = "Mitarbeiterverwaltung ";
-            // 
-            // MitarbeiterlistetoolStripMenuItem1
-            // 
-            this.MitarbeiterlistetoolStripMenuItem1.Name = "MitarbeiterlistetoolStripMenuItem1";
-            this.MitarbeiterlistetoolStripMenuItem1.Size = new System.Drawing.Size(411, 36);
-            this.MitarbeiterlistetoolStripMenuItem1.Text = "Mitarbeiterliste";
-            this.MitarbeiterlistetoolStripMenuItem1.Click += new System.EventHandler(this.MitarbeiterlistetoolStripMenuItem1_Click);
-            // 
-            // NeuerMitarbeiterImportierentoolStripMenuItem2
-            // 
-            this.NeuerMitarbeiterImportierentoolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AlsReinigungsPersonlToolStripMenuItem,
-            this.alsKüchenPersonalToolStripMenuItem,
-            this.alsTransportdienstToolStripMenuItem,
-            this.alsSicherheitsdienstToolStripMenuItem});
-            this.NeuerMitarbeiterImportierentoolStripMenuItem2.Name = "NeuerMitarbeiterImportierentoolStripMenuItem2";
-            this.NeuerMitarbeiterImportierentoolStripMenuItem2.Size = new System.Drawing.Size(411, 36);
-            this.NeuerMitarbeiterImportierentoolStripMenuItem2.Text = "Neuer Mitarbeiter Importieren";
-            // 
-            // AlsReinigungsPersonlToolStripMenuItem
-            // 
-            this.AlsReinigungsPersonlToolStripMenuItem.Name = "AlsReinigungsPersonlToolStripMenuItem";
-            this.AlsReinigungsPersonlToolStripMenuItem.Size = new System.Drawing.Size(333, 36);
-            this.AlsReinigungsPersonlToolStripMenuItem.Text = "Als ReinigungsPersonal";
-            this.AlsReinigungsPersonlToolStripMenuItem.Click += new System.EventHandler(this.AlsReinigungsPersonlToolStripMenuItem_Click);
-            // 
-            // alsKüchenPersonalToolStripMenuItem
-            // 
-            this.alsKüchenPersonalToolStripMenuItem.Name = "alsKüchenPersonalToolStripMenuItem";
-            this.alsKüchenPersonalToolStripMenuItem.Size = new System.Drawing.Size(333, 36);
-            this.alsKüchenPersonalToolStripMenuItem.Text = "Als KüchenPersonal";
-            this.alsKüchenPersonalToolStripMenuItem.Click += new System.EventHandler(this.alsKüchenPersonalToolStripMenuItem_Click);
-            // 
-            // alsTransportdienstToolStripMenuItem
-            // 
-            this.alsTransportdienstToolStripMenuItem.Name = "alsTransportdienstToolStripMenuItem";
-            this.alsTransportdienstToolStripMenuItem.Size = new System.Drawing.Size(333, 36);
-            this.alsTransportdienstToolStripMenuItem.Text = "Als Transportdienst";
-            this.alsTransportdienstToolStripMenuItem.Click += new System.EventHandler(this.alsTransportdienstToolStripMenuItem_Click);
-            // 
-            // alsSicherheitsdienstToolStripMenuItem
-            // 
-            this.alsSicherheitsdienstToolStripMenuItem.Name = "alsSicherheitsdienstToolStripMenuItem";
-            this.alsSicherheitsdienstToolStripMenuItem.Size = new System.Drawing.Size(333, 36);
-            this.alsSicherheitsdienstToolStripMenuItem.Text = "Als Sicherheitsdienst";
-            this.alsSicherheitsdienstToolStripMenuItem.Click += new System.EventHandler(this.alsSicherheitsdienstToolStripMenuItem_Click);
-            // 
-            // mitarbeiterExportierenToolStripMenuItem
-            // 
-            this.mitarbeiterExportierenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.vonReinigungsPersonalToolStripMenuItem,
-            this.vonKüchenPersonalToolStripMenuItem,
-            this.vonTransportdienstToolStripMenuItem,
-            this.vonSicherheitsdienstToolStripMenuItem});
-            this.mitarbeiterExportierenToolStripMenuItem.Name = "mitarbeiterExportierenToolStripMenuItem";
-            this.mitarbeiterExportierenToolStripMenuItem.Size = new System.Drawing.Size(411, 36);
-            this.mitarbeiterExportierenToolStripMenuItem.Text = "Mitarbeiter Exportieren";
-            // 
-            // vonReinigungsPersonalToolStripMenuItem
-            // 
-            this.vonReinigungsPersonalToolStripMenuItem.Name = "vonReinigungsPersonalToolStripMenuItem";
-            this.vonReinigungsPersonalToolStripMenuItem.Size = new System.Drawing.Size(343, 36);
-            this.vonReinigungsPersonalToolStripMenuItem.Text = "Von ReinigungsPersonal";
-            // 
-            // vonKüchenPersonalToolStripMenuItem
-            // 
-            this.vonKüchenPersonalToolStripMenuItem.Name = "vonKüchenPersonalToolStripMenuItem";
-            this.vonKüchenPersonalToolStripMenuItem.Size = new System.Drawing.Size(343, 36);
-            this.vonKüchenPersonalToolStripMenuItem.Text = "Von KüchenPersonal";
-            // 
-            // vonTransportdienstToolStripMenuItem
-            // 
-            this.vonTransportdienstToolStripMenuItem.Name = "vonTransportdienstToolStripMenuItem";
-            this.vonTransportdienstToolStripMenuItem.Size = new System.Drawing.Size(343, 36);
-            this.vonTransportdienstToolStripMenuItem.Text = "Von Transportdienst";
-            // 
-            // vonSicherheitsdienstToolStripMenuItem
-            // 
-            this.vonSicherheitsdienstToolStripMenuItem.Name = "vonSicherheitsdienstToolStripMenuItem";
-            this.vonSicherheitsdienstToolStripMenuItem.Size = new System.Drawing.Size(343, 36);
-            this.vonSicherheitsdienstToolStripMenuItem.Text = "Von Sicherheitsdienst";
             // 
             // patientVerwaltungToolStripMenuItem
             // 
@@ -363,17 +257,5 @@
         private System.Windows.Forms.ToolStripMenuItem passwortÄndernToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abmeldenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem PersonenListeAnzeigentoolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem mitarbeiterverwaltungToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem MitarbeiterlistetoolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem NeuerMitarbeiterImportierentoolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem AlsReinigungsPersonlToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mitarbeiterExportierenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alsKüchenPersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alsTransportdienstToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alsSicherheitsdienstToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vonReinigungsPersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vonKüchenPersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vonTransportdienstToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vonSicherheitsdienstToolStripMenuItem;
     }
 }

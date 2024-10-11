@@ -12,9 +12,7 @@ namespace Kliniken
 {
     public partial class frmMitarbeiterDatenAnzeigen : Form
     {
-        public enum enAnzeigenMode { ByMitarbeiterID = 1, ByReinigungsPersonalMitarbeiterID = 2, 
-                                    ByKüchenPersonalMitarbeiterID = 3, ByTransportdienstMitarbeiterID = 4,
-                                    BySicherheitsdienstMitarbeiterId= 5}
+        public enum enAnzeigenMode { ByMitarbeiterID = 1}
         private enAnzeigenMode _Mode = enAnzeigenMode.ByMitarbeiterID;
 
         private int _MitarbeiterID = -1;
@@ -41,35 +39,7 @@ namespace Kliniken
         }
         private void _LoadMitarbeiterDaten()
         {
-            switch(_Mode)
-            {
-                case enAnzeigenMode.ByMitarbeiterID:
-                    {
-                        ctrMiratbeiterKarte1.LoadMitarbeiterDatenByMitarbeiterID(_MitarbeiterID);
-                        break;
-                    }
-                case enAnzeigenMode.ByReinigungsPersonalMitarbeiterID:
-                    {
-                        ctrMiratbeiterKarte1.LoadReinigungsPersonalDatenByMitarbeiterID(_MitarbeiterID);
-                        break;
-                    }
-                case enAnzeigenMode.ByKüchenPersonalMitarbeiterID:
-                    {
-                        ctrMiratbeiterKarte1.LoaKüchenPersonalDatenByMitarbeiterID(_MitarbeiterID);
-                        break;
-                    }
-                case enAnzeigenMode.ByTransportdienstMitarbeiterID:
-                    {
-                        ctrMiratbeiterKarte1.LoadTransportdiensteByMitarbeiterID(_MitarbeiterID);
-                        break;
-                    }
-                case enAnzeigenMode.BySicherheitsdienstMitarbeiterId:
-                    {
-                        ctrMiratbeiterKarte1.LoadSicherheitsdiensteByMitarbeiterID(_MitarbeiterID);
-                        break;
-                    }
-
-            }
+            ctrMiratbeiterKarte1.LoadMitarbeiterDatenByMitarbeiterID(_MitarbeiterID);
         }
     }
 }

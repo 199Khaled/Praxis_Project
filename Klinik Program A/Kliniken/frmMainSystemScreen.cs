@@ -109,54 +109,6 @@ namespace Kliniken
             frm.ShowDialog();
         }
 
-        private void AlsReinigungsPersonlToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen.enMode mode = frmAktualisierenUndNeuenMitarbeiterHinzufügen.enMode.AddNew;
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen.enAbteilung abteilung = frmAktualisierenUndNeuenMitarbeiterHinzufügen.enAbteilung.ReinigungsPersonal;
 
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen frm =
-             new frmAktualisierenUndNeuenMitarbeiterHinzufügen(mode, abteilung);
-
-            frm.ShowDialog();
-        }
-
-        private void alsKüchenPersonalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen.enMode mode = frmAktualisierenUndNeuenMitarbeiterHinzufügen.enMode.AddNew;
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen.enAbteilung abteilung = frmAktualisierenUndNeuenMitarbeiterHinzufügen.enAbteilung.KüchenPersonal;
-
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen frm =
-            new frmAktualisierenUndNeuenMitarbeiterHinzufügen(mode, abteilung);
-
-            frm.ShowDialog();
-        }
-
-        private void alsTransportdienstToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen.enMode mode = frmAktualisierenUndNeuenMitarbeiterHinzufügen.enMode.AddNew;
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen.enAbteilung abteilung = frmAktualisierenUndNeuenMitarbeiterHinzufügen.enAbteilung.Transportdienst;
-
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen frm =
-            new frmAktualisierenUndNeuenMitarbeiterHinzufügen(mode, abteilung);
-
-            frm.ShowDialog();
-        }
-
-        private void alsSicherheitsdienstToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen.enMode mode = frmAktualisierenUndNeuenMitarbeiterHinzufügen.enMode.AddNew;
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen.enAbteilung abteilung = frmAktualisierenUndNeuenMitarbeiterHinzufügen.enAbteilung.Sicherheitsdienst;
-
-            frmAktualisierenUndNeuenMitarbeiterHinzufügen frm =
-            new frmAktualisierenUndNeuenMitarbeiterHinzufügen(mode, abteilung);
-
-            frm.ShowDialog();
-        }
-
-        private void MitarbeiterlistetoolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmMitarbeiterListeAnzeigen frm = new frmMitarbeiterListeAnzeigen();
-            frm.ShowDialog();
-        }
     }
 }

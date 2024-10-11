@@ -20,3 +20,16 @@ C:\Users\Khaled\Desktop\Klinik Program\KlinkDatenSchicht\bin\Debug\KlinkDatenSch
 C:\Users\Khaled\Desktop\Klinik Program\KlinkDatenSchicht\bin\Debug\KlinikDatenZugriffsSchicht.dll.config
 C:\Users\Khaled\Desktop\Klinik Program\KlinkDatenSchicht\bin\Debug\clsHilfsMethoden.dll
 C:\Users\Khaled\Desktop\Klinik Program\KlinkDatenSchicht\bin\Debug\clsHilfsMethoden.pdb
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\bin\Debug\KlinkDatenSchicht.dll.config
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\bin\Debug\KlinkDatenSchicht.dll
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\bin\Debug\KlinkDatenSchicht.pdb
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\bin\Debug\clsHilfsMethoden.dll
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\bin\Debug\KlinikDatenZugriffsSchicht.dll
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\bin\Debug\clsHilfsMethoden.pdb
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\bin\Debug\KlinikDatenZugriffsSchicht.pdb
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\bin\Debug\KlinikDatenZugriffsSchicht.dll.config
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\obj\Debug\KlinkDatenSchicht.csproj.AssemblyReference.cache
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\obj\Debug\KlinkDatenSchicht.csproj.CoreCompileInputs.cache
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\obj\Debug\KlinkDat.59552406.Up2Date
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\obj\Debug\KlinkDatenSchicht.dll
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\KlinkDatenSchicht\obj\Debug\KlinkDatenSchicht.pdb

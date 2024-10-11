@@ -71,12 +71,6 @@
     <Compile Include="PersonDaten\Controls\ctrPersonFilter.Designer.cs">
       <DependentUpon>ctrPersonFilter.cs</DependentUpon>
     </Compile>
-    <Compile Include="MitarbeiterDaten\frmMitarbeiterListeAnzeigen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MitarbeiterDaten\frmMitarbeiterListeAnzeigen.Designer.cs">
-      <DependentUpon>frmMitarbeiterListeAnzeigen.cs</DependentUpon>
-    </Compile>
     <Compile Include="GlobaleKlassen\clsDatenTabelleAnzeigen.cs" />
     <Compile Include="MitarbeiterDaten\Contors\ctrMitarbeiterEinfügen.cs">
       <SubType>UserControl</SubType>
@@ -285,9 +279,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BenutzerDaten\frmPasswortÄndern.resx">
       <DependentUpon>frmPasswortÄndern.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MitarbeiterDaten\frmMitarbeiterListeAnzeigen.resx">
-      <DependentUpon>frmMitarbeiterListeAnzeigen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatientDaten\frmPatientDatenAnzeigen.resx">
       <DependentUpon>frmPatientDatenAnzeigen.cs</DependentUpon>

@@ -18,18 +18,6 @@ namespace Kliniken
         public enum enMode { AddNew = 1, UpdateByPersonID = 2, UpdateByMitarbeiterID = 3}
         private enMode _Mode = enMode.AddNew;
 
-        public enum enAbteilung { ReinigungsPersonal = 1, KüchenPersonal = 2, Transportdienst = 3,
-        Sicherheitsdienst = 4}
-        private enAbteilung _Abteilung = enAbteilung.ReinigungsPersonal;
-        public frmAktualisierenUndNeuenMitarbeiterHinzufügen(enMode mode, enAbteilung abteilung)
-        {
-            InitializeComponent();
-
-            _Mode = mode;
-            _Abteilung = abteilung;
-            
-        }
-
         public frmAktualisierenUndNeuenMitarbeiterHinzufügen(enMode Mode, int PersonID)
         {
             InitializeComponent();
@@ -50,136 +38,34 @@ namespace Kliniken
 
         private void _DatenFürSpeichernRichten()
         {
-            if (_Mode == enMode.AddNew)
+
+            if (_Mode == enMode.UpdateByMitarbeiterID || _Mode == enMode.UpdateByPersonID)
             {
                 if (ctrMitarbeiterEinfügen1.MitarbeiterDatenSpeichern())
                 {
-                    switch (_Abteilung)
-                    {
-                        case enAbteilung.ReinigungsPersonal:
-                            {
-                                _ReinigungsPersonalDatenSpeichern();
-                                break; ;
-                            }
-
-                        case enAbteilung.KüchenPersonal:
-                            {
-                                _KüchenPersonalDatenSpeichern();
-                                break;
-                            }
-
-                        case enAbteilung.Transportdienst:
-                            {
-                                _TransportdienstDatenSpeichern();
-                                break;
-                            }
-
-                        case enAbteilung.Sicherheitsdienst:
-                            {
-                                _SicherheitsdienstDatenSpeichern();
-                                break;
-                            }
-                    }
-                }
-            }
-            else if(_Mode == enMode.UpdateByMitarbeiterID || _Mode == enMode.UpdateByPersonID)
-            {
-                if(ctrMitarbeiterEinfügen1.MitarbeiterDatenSpeichern())
-                {
                     MessageBox.Show("Mitarbeiterdaten wurden erfolgreich aktualisiert",
-                               "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                               "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                     MessageBox.Show("Fehler beim Aktualisieren der Mitarbeiterdaten ist aufgetreten",
                                "Fehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            if (_Mode == enMode.AddNew)
             {
-                MessageBox.Show("Fehler beim DatenSpeichern des Mitarbeiters ist aufgetreten",
-                                "Fehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                if (ctrMitarbeiterEinfügen1.MitarbeiterDatenSpeichern())
+                {
+                    MessageBox.Show("Mitarbeiterdaten wurden erfolgreich hinzugefügt!",
+                              "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Fehler beim DatenSpeichern des Mitarbeiters ist aufgetreten",
+                                    "Fehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-        }       
-
-        private void _ReinigungsPersonalDatenSpeichern()
-        {
-            clsReinigungsPersonalDaten reinigungsPersonalDaten = new clsReinigungsPersonalDaten();
-            reinigungsPersonalDaten.MitabeiterID = _MitarbeiterID;
-
-            if (reinigungsPersonalDaten.Save())
-            {
-                MessageBox.Show("PersonlaReiniger mit der PersonalID [ " + reinigungsPersonalDaten.PersonalID +
-                    " ] Und der MitarbeiterID [ " + _MitarbeiterID + " ] wurde erfolgreich " +
-               "hinzugefügt", "Erfolg");
-            }
-            else
-            {
-                MessageBox.Show("Fehler beim DatenSpeichern der PersonalReiniger ist aufgetreten",
-                                 "Fehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                }
             }
         }
-
-        private void _KüchenPersonalDatenSpeichern()
-        {
-            clsKüchenPersonalDaten küchenPersonalDaten = new clsKüchenPersonalDaten();
-             küchenPersonalDaten.MitabeiterID = _MitarbeiterID;
-
-            if (küchenPersonalDaten.Save())
-            {
-                MessageBox.Show("Küchen Mitrabeiter mit der PersonalID [ " +  küchenPersonalDaten.PersonalID +
-                    " ] Und der MitarbeiterID [ " + _MitarbeiterID + " ] wurde erfolgreich " +
-              "hinzugefügt", "Erfolg");
-            }
-            else
-            {
-                MessageBox.Show("Fehler beim DatenSpeichern Küchenpersonal ist aufgetreten",
-                                 "Fehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-        }
-
-        private void _TransportdienstDatenSpeichern()
-        {
-            clsTransportdienstDaten transportdienstDaten = new clsTransportdienstDaten();
-            transportdienstDaten.MitabeiterID = _MitarbeiterID; // die MitarbeiterID wurd durch eventhandelr freigegeben 
-
-
-            if (transportdienstDaten.Save())
-            { 
-                MessageBox.Show("Transportdienst Mitrabeiter mit der PersonalID [ " +  transportdienstDaten.PersonalID +
-                    " ] Und der MitarbeiterID [ " + _MitarbeiterID + " ] wurde erfolgreich " +
-              "hinzugefügt", "Erfolg");
-            }
-            else
-            {
-                MessageBox.Show("Fehler beim DatenSpeichern Transportdienst ist aufgetreten",
-                                 "Fehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-        }
-
-        private void _SicherheitsdienstDatenSpeichern()
-        {
-            clsSicherheitsdienstDaten sicherheitsdienstDaten = new clsSicherheitsdienstDaten();
-            sicherheitsdienstDaten.MitabeiterID = _MitarbeiterID; // die MitarbeiterID wurd durch eventhandelr freigegeben 
-
-
-            if (sicherheitsdienstDaten.Save())
-            {
-                    MessageBox.Show("Sicherheitsdienst Mitrabeiter mit der PersonalID [ " +  sicherheitsdienstDaten.PersonalID +
-                   " ] Und der MitarbeiterID [ " + _MitarbeiterID + " ] wurde erfolgreich " +
-                   "hinzugefügt", "Erfolg");
-                
-            }
-            else
-            {
-                MessageBox.Show("Fehler beim DatenSpeichern Sicherheitsdienst ist aufgetreten",
-                                 "Fehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-        }
-
+ 
         private bool _IsValidiert()
         {
             
@@ -257,5 +143,9 @@ namespace Kliniken
             _MitarbeiterID = obj;
         }
 
+        private void ctrMitarbeiterEinfügen3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

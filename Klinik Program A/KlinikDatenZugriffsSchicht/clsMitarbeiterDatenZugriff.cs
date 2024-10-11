@@ -17,7 +17,7 @@ namespace KlinikDatenZugriffsSchicht
         private static string ConnectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
 
         public static bool GetMitarbeiterbyID(int mitarbeiterID, ref int personID, ref int versicherungsID,
-            ref string steuerID, ref string beruftsBezeichnung, ref string Abteilung, 
+            ref string steuerID, ref string beruftsBezeichnung, 
             ref string qualifikationen, ref  DateTime eingestelltAm, ref string GefeuertAm,
             ref int EingestelltBeiUser, ref bool IstAktive)
         {
@@ -44,7 +44,7 @@ namespace KlinikDatenZugriffsSchicht
                                 versicherungsID = (int)reader["VersicherungsID"];
                                 steuerID = (string)reader["SteuerID"];
                                 beruftsBezeichnung = (string)reader["BerufsBezeichnung"].ToString();
-                                Abteilung = (string)reader["Abteilung"];
+                           
                                 qualifikationen = (string)reader["Qualifikationen"].ToString();
                                 eingestelltAm = (DateTime)reader["EingestelltAm"];
                                 GefeuertAm = (string)reader["GefeuertAm"];
@@ -66,7 +66,7 @@ namespace KlinikDatenZugriffsSchicht
         }
 
         public static bool GetMitarbeiterbyPersonID(ref int mitarbeiterID, int personID, ref int versicherungsID,
-     ref string steuerID, ref string beruftsBezeichnung, ref string Abteilung,
+     ref string steuerID, ref string beruftsBezeichnung,
      ref string qualifikationen, ref DateTime eingestelltAm, ref string GefeuertAm,
       ref int EingestelltBeiUser, ref bool IstAktive)
         {
@@ -93,7 +93,7 @@ namespace KlinikDatenZugriffsSchicht
                                 versicherungsID = (int)reader["VersicherungsID"];
                                 steuerID = (string)reader["SteuerID"];
                                 beruftsBezeichnung = (string)reader["BerufsBezeichnung"].ToString();
-                                Abteilung = (string)reader["Abteilung"];
+                     
                                 qualifikationen =(string)reader["Qualifikationen"].ToString();
                                 eingestelltAm = (DateTime)reader["EingestelltAm"];
                                 GefeuertAm = (string)reader["GefeuertAm"].ToString();
@@ -198,7 +198,7 @@ namespace KlinikDatenZugriffsSchicht
             return isActive;
         }
         public static int AddNewMitarbeiter(int personID, int versicherungsID,
-           string steuerID, string beruftsBezeichnung,  string Abteilung,
+           string steuerID, string beruftsBezeichnung,
            string qualifikationen, DateTime eingestelltAm, string GefeuertAm, 
            int EingestelltBeiUser, bool IstAktive)
         {
@@ -216,7 +216,7 @@ namespace KlinikDatenZugriffsSchicht
                         command.Parameters.AddWithValue("@VersicherungsID", versicherungsID);
                         command.Parameters.AddWithValue("@SteuerID", steuerID);
                         command.Parameters.AddWithValue("@Berufsbezeichnung", beruftsBezeichnung);
-                        command.Parameters.AddWithValue("@Abteilung", Abteilung);
+                  
                         command.Parameters.AddWithValue("@Qualifikationen", qualifikationen);
                         command.Parameters.AddWithValue("@EingestelltAm", eingestelltAm); 
                         command.Parameters.AddWithValue("@GefeuertAm", GefeuertAm);
@@ -248,7 +248,7 @@ namespace KlinikDatenZugriffsSchicht
         }
 
         public static bool UpdateMitarbeiter(int MitarbeiterID,int personID, int versicherungsID,
-           string steuerID, string beruftsBezeichnung, string Abteilung,
+           string steuerID, string beruftsBezeichnung,
            string qualifikationen, DateTime eingestelltAm, string GefeuertAm,
            int EingestelltBeiUser, bool IstAktive)
         {
@@ -268,7 +268,7 @@ namespace KlinikDatenZugriffsSchicht
                         command.Parameters.AddWithValue("@VersicherungsID", versicherungsID);
                         command.Parameters.AddWithValue("@SteuerID", steuerID);
                         command.Parameters.AddWithValue("@Berufsbezeichnung", beruftsBezeichnung);
-                        command.Parameters.AddWithValue("@Abteilung", Abteilung);
+                    
                         command.Parameters.AddWithValue("@Qualifikationen", qualifikationen);
                         command.Parameters.AddWithValue("@EingestelltAm", eingestelltAm);
                         command.Parameters.AddWithValue("@GefeuertAm", GefeuertAm);

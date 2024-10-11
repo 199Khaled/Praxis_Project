@@ -89,7 +89,6 @@ namespace Kliniken
             _mitarbeiter.PersonID = Convert.ToInt32(lblPersonID.Text);
             _mitarbeiter.VersicherungsID = clsVersicherungDaten.Find(cbVersichertBei.SelectedItem as string).VersicherungID;
             _mitarbeiter.SteuerID = txtSteuerID.Text;
-            _mitarbeiter.Abteilung = cbAbteilung.SelectedItem as string;
 
             if(!string.IsNullOrEmpty(txtQualifikationen.Text))
                 _mitarbeiter.Qualifikationen = txtQualifikationen.Text;
@@ -124,7 +123,7 @@ namespace Kliniken
                 lblErstelltBeiUser.Text = clsBenutzerDaten.Find(_mitarbeiter.EingestelltBeiUser).Rollenname;
                 txtSteuerID.Text = _mitarbeiter.SteuerID;
                 cbVersichertBei.SelectedItem = clsVersicherungDaten.Find(_mitarbeiter.VersicherungsID).VersicherungsName;
-                cbAbteilung.SelectedItem = _mitarbeiter.Abteilung;
+      
                 txtQualifikationen.Text = _mitarbeiter.Qualifikationen;
                 txtBerufsBezeichnung.Text = _mitarbeiter.BerufsBezeichnung;
                 dtpEingestelltAm.Value = _mitarbeiter.EingestelltAm;
@@ -150,7 +149,7 @@ namespace Kliniken
                 lblErstelltBeiUser.Text = clsBenutzerDaten.Find(_mitarbeiter.EingestelltBeiUser).Rollenname;
                 txtSteuerID.Text = _mitarbeiter.SteuerID;
                 cbVersichertBei.SelectedItem = clsVersicherungDaten.Find(_mitarbeiter.VersicherungsID).VersicherungsName;
-                cbAbteilung.SelectedItem = _mitarbeiter.Abteilung;
+
                 txtQualifikationen.Text = _mitarbeiter.Qualifikationen;
                 txtBerufsBezeichnung.Text = _mitarbeiter.BerufsBezeichnung;
                 dtpEingestelltAm.Value = _mitarbeiter.EingestelltAm;
