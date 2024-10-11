@@ -14,6 +14,7 @@ namespace Kliniken
         [STAThread]
         static void Main()
         {
+            //Hallo Khaled
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmAktualisierenUndNeueArztHinzufügen());
