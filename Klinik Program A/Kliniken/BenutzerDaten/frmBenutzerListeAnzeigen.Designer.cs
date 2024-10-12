@@ -243,6 +243,7 @@
             // 
             this.dgvBenutzer.AllowUserToAddRows = false;
             this.dgvBenutzer.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvBenutzer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBenutzer.BackgroundColor = System.Drawing.Color.White;

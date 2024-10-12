@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblRecord = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnPatientHinzufügen = new System.Windows.Forms.Button();
@@ -120,6 +121,8 @@
             // 
             this.dgvPatient.AllowUserToAddRows = false;
             this.dgvPatient.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.dgvPatient.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPatient.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvPatient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPatient.ContextMenuStrip = this.cmsPatienten;
@@ -129,8 +132,8 @@
             this.dgvPatient.Name = "dgvPatient";
             this.dgvPatient.ReadOnly = true;
             this.dgvPatient.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvPatient.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvPatient.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPatient.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPatient.Size = new System.Drawing.Size(1339, 382);
             this.dgvPatient.TabIndex = 11;

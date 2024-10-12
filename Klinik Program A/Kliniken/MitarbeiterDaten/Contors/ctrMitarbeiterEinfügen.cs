@@ -75,13 +75,12 @@ namespace Kliniken
             lblMitarbeiterID.Text = "[???]";
             lblErstelltBeiUser.Text = "[?????]";
             txtSteuerID.Clear();
-            txtQualifikationen.Clear();
             dtpEingestelltAm.Value = DateTime.Now.Date;
             txtGefeuertAm.Clear();
-            txtBerufsBezeichnung.Clear();
+ 
 
             _LoadVersicherungenDaten();
-            cbAbteilung.SelectedIndex= 0;
+       
             lblErstelltBeiUser.Text = clsGlobaleKlasse.BenutzerDaten.Rollenname;
         }
         private void _FillMitarbeiterWithData()
@@ -89,16 +88,6 @@ namespace Kliniken
             _mitarbeiter.PersonID = Convert.ToInt32(lblPersonID.Text);
             _mitarbeiter.VersicherungsID = clsVersicherungDaten.Find(cbVersichertBei.SelectedItem as string).VersicherungID;
             _mitarbeiter.SteuerID = txtSteuerID.Text;
-
-            if(!string.IsNullOrEmpty(txtQualifikationen.Text))
-                _mitarbeiter.Qualifikationen = txtQualifikationen.Text;
-            else
-            _mitarbeiter.Qualifikationen = "NULL";
-
-            if(!string.IsNullOrEmpty(txtBerufsBezeichnung.Text))
-                _mitarbeiter.BerufsBezeichnung = txtBerufsBezeichnung.Text;
-            else
-            _mitarbeiter.BerufsBezeichnung = "NULL";
 
             _mitarbeiter.EingestelltAm = dtpEingestelltAm.Value.Date;
 
@@ -124,8 +113,6 @@ namespace Kliniken
                 txtSteuerID.Text = _mitarbeiter.SteuerID;
                 cbVersichertBei.SelectedItem = clsVersicherungDaten.Find(_mitarbeiter.VersicherungsID).VersicherungsName;
       
-                txtQualifikationen.Text = _mitarbeiter.Qualifikationen;
-                txtBerufsBezeichnung.Text = _mitarbeiter.BerufsBezeichnung;
                 dtpEingestelltAm.Value = _mitarbeiter.EingestelltAm;
                 txtGefeuertAm.Text = _mitarbeiter.GefeuertAm;
                 chbIstAktive.Checked = _mitarbeiter.IstAtktive;
@@ -150,8 +137,6 @@ namespace Kliniken
                 txtSteuerID.Text = _mitarbeiter.SteuerID;
                 cbVersichertBei.SelectedItem = clsVersicherungDaten.Find(_mitarbeiter.VersicherungsID).VersicherungsName;
 
-                txtQualifikationen.Text = _mitarbeiter.Qualifikationen;
-                txtBerufsBezeichnung.Text = _mitarbeiter.BerufsBezeichnung;
                 dtpEingestelltAm.Value = _mitarbeiter.EingestelltAm;
                 txtGefeuertAm.Text = _mitarbeiter.GefeuertAm;
                 chbIstAktive.Checked = _mitarbeiter.IstAtktive;

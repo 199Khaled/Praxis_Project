@@ -30,13 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dtpEingestelltAm = new System.Windows.Forms.DateTimePicker();
-            this.txtQualifikationen = new System.Windows.Forms.TextBox();
             this.txtSteuerID = new System.Windows.Forms.TextBox();
-            this.txtBerufsBezeichnung = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblErstelltBeiUser = new System.Windows.Forms.Label();
@@ -58,21 +54,11 @@
             // 
             this.dtpEingestelltAm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpEingestelltAm.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEingestelltAm.Location = new System.Drawing.Point(193, 278);
+            this.dtpEingestelltAm.Location = new System.Drawing.Point(191, 190);
             this.dtpEingestelltAm.Margin = new System.Windows.Forms.Padding(4);
             this.dtpEingestelltAm.Name = "dtpEingestelltAm";
             this.dtpEingestelltAm.Size = new System.Drawing.Size(789, 31);
             this.dtpEingestelltAm.TabIndex = 52;
-            // 
-            // txtQualifikationen
-            // 
-            this.txtQualifikationen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQualifikationen.Location = new System.Drawing.Point(191, 193);
-            this.txtQualifikationen.Margin = new System.Windows.Forms.Padding(4);
-            this.txtQualifikationen.Multiline = true;
-            this.txtQualifikationen.Name = "txtQualifikationen";
-            this.txtQualifikationen.Size = new System.Drawing.Size(789, 70);
-            this.txtQualifikationen.TabIndex = 51;
             // 
             // txtSteuerID
             // 
@@ -84,20 +70,11 @@
             this.txtSteuerID.TabIndex = 50;
             this.txtSteuerID.Validating += new System.ComponentModel.CancelEventHandler(this.txtSteuerID_Validating);
             // 
-            // txtBerufsBezeichnung
-            // 
-            this.txtBerufsBezeichnung.Location = new System.Drawing.Point(191, 368);
-            this.txtBerufsBezeichnung.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBerufsBezeichnung.Multiline = true;
-            this.txtBerufsBezeichnung.Name = "txtBerufsBezeichnung";
-            this.txtBerufsBezeichnung.Size = new System.Drawing.Size(789, 88);
-            this.txtBerufsBezeichnung.TabIndex = 49;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(64, 329);
+            this.label11.Location = new System.Drawing.Point(62, 241);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(112, 20);
@@ -108,34 +85,12 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(51, 287);
+            this.label10.Location = new System.Drawing.Point(49, 199);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(125, 20);
             this.label10.TabIndex = 47;
             this.label10.Text = "EingestelltAm:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(44, 199);
-            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(134, 20);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Qualifikationen:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(5, 381);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(171, 20);
-            this.label7.TabIndex = 44;
-            this.label7.Text = "BerufsBezeichnung:";
             // 
             // label5
             // 
@@ -245,24 +200,20 @@
             this.gbMitarbeiterInfo.Controls.Add(this.cbVersichertBei);
             this.gbMitarbeiterInfo.Controls.Add(this.dtpEingestelltAm);
             this.gbMitarbeiterInfo.Controls.Add(this.label2);
-            this.gbMitarbeiterInfo.Controls.Add(this.txtBerufsBezeichnung);
             this.gbMitarbeiterInfo.Controls.Add(this.label11);
             this.gbMitarbeiterInfo.Controls.Add(this.label10);
             this.gbMitarbeiterInfo.Controls.Add(this.label3);
-            this.gbMitarbeiterInfo.Controls.Add(this.label7);
             this.gbMitarbeiterInfo.Controls.Add(this.lblPersonID);
             this.gbMitarbeiterInfo.Controls.Add(this.lblMitarbeiterID);
-            this.gbMitarbeiterInfo.Controls.Add(this.txtQualifikationen);
             this.gbMitarbeiterInfo.Controls.Add(this.lblErstelltBeiUser);
             this.gbMitarbeiterInfo.Controls.Add(this.txtSteuerID);
             this.gbMitarbeiterInfo.Controls.Add(this.label4);
             this.gbMitarbeiterInfo.Controls.Add(this.label5);
-            this.gbMitarbeiterInfo.Controls.Add(this.label9);
             this.gbMitarbeiterInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbMitarbeiterInfo.ForeColor = System.Drawing.Color.Black;
             this.gbMitarbeiterInfo.Location = new System.Drawing.Point(15, 17);
             this.gbMitarbeiterInfo.Name = "gbMitarbeiterInfo";
-            this.gbMitarbeiterInfo.Size = new System.Drawing.Size(1001, 472);
+            this.gbMitarbeiterInfo.Size = new System.Drawing.Size(1001, 290);
             this.gbMitarbeiterInfo.TabIndex = 56;
             this.gbMitarbeiterInfo.TabStop = false;
             this.gbMitarbeiterInfo.Text = "Mitarbeiter Info";
@@ -283,7 +234,7 @@
             // txtGefeuertAm
             // 
             this.txtGefeuertAm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGefeuertAm.Location = new System.Drawing.Point(191, 322);
+            this.txtGefeuertAm.Location = new System.Drawing.Point(189, 234);
             this.txtGefeuertAm.Name = "txtGefeuertAm";
             this.txtGefeuertAm.Size = new System.Drawing.Size(790, 31);
             this.txtGefeuertAm.TabIndex = 56;
@@ -300,7 +251,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ctrMitarbeiterEinfügen";
-            this.Size = new System.Drawing.Size(1031, 504);
+            this.Size = new System.Drawing.Size(1031, 312);
             this.Load += new System.EventHandler(this.ctrMitarbeiterEinfügen_Load);
             this.gbMitarbeiterInfo.ResumeLayout(false);
             this.gbMitarbeiterInfo.PerformLayout();
@@ -311,13 +262,9 @@
 
         #endregion
         private System.Windows.Forms.DateTimePicker dtpEingestelltAm;
-        private System.Windows.Forms.TextBox txtQualifikationen;
         private System.Windows.Forms.TextBox txtSteuerID;
-        private System.Windows.Forms.TextBox txtBerufsBezeichnung;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblErstelltBeiUser;
