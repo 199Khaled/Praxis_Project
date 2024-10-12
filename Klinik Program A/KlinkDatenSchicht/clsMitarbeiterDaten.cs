@@ -23,23 +23,18 @@ namespace KlinkDatenSchicht
         public string Vollname => clsPersonDaten.Find(this.PersonID).Vollname;
         public int VersicherungsID { get; set; }
         public string SteuerID { get; set; }
-        public string BerufsBezeichnung { get; set; }
-        public string Qualifikationen { get; set; }
         public DateTime EingestelltAm { get; set; }
         public string GefeuertAm { get; set; }
         public int EingestelltBeiUser { get; set; }
         public bool IstAtktive { get; set; }
 
         private clsMitarbeiterDaten(int mitarbeiterID, int personID, int versicherungsID, string steuerID,
-            string berufsBezeichnung, string qualifikationen, DateTime eingestelltAm,
-            string gefeuertAm, int eingestelltBeiUser, bool istaktive)
+            DateTime eingestelltAm,string gefeuertAm, int eingestelltBeiUser, bool istaktive)
         {
             this.MitarbeiterID = mitarbeiterID;
             this.PersonID = personID;
             this.VersicherungsID = versicherungsID;
             this.SteuerID = steuerID;
-            this.BerufsBezeichnung = berufsBezeichnung;
-            this.Qualifikationen = qualifikationen;
             this.EingestelltAm = eingestelltAm;
             this.GefeuertAm = gefeuertAm;
             this.EingestelltBeiUser = eingestelltBeiUser;
@@ -53,8 +48,6 @@ namespace KlinkDatenSchicht
             this.MitarbeiterID = -1;
             this.VersicherungsID = -1;
             this.SteuerID = string.Empty;
-            this.BerufsBezeichnung = string.Empty;
-            this.Qualifikationen = string.Empty;
             this.EingestelltAm = DateTime.Now;
             this.GefeuertAm = string.Empty;
             this.EingestelltBeiUser = -1;
@@ -66,7 +59,7 @@ namespace KlinkDatenSchicht
         private bool _AddNew()
         {
             this.MitarbeiterID = clsMitarbeiterDatenZugriff.AddNewMitarbeiter(this.PersonID, this.VersicherungsID,
-                this.SteuerID, this.BerufsBezeichnung, this.Qualifikationen, this.EingestelltAm,
+                this.SteuerID, this.EingestelltAm,
                 this.GefeuertAm, this.EingestelltBeiUser, this.IstAtktive);
 
             return (this.MitarbeiterID != -1);
@@ -75,7 +68,7 @@ namespace KlinkDatenSchicht
         private bool _Update()
         {
             return clsMitarbeiterDatenZugriff.UpdateMitarbeiter(this.MitarbeiterID, this.PersonID, this.VersicherungsID,
-                this.SteuerID, this.BerufsBezeichnung, this.Qualifikationen, this.EingestelltAm,
+                this.SteuerID, this.EingestelltAm,
                 this.GefeuertAm, this.EingestelltBeiUser,this.IstAtktive);
         }
 
@@ -101,18 +94,15 @@ namespace KlinkDatenSchicht
         public static clsMitarbeiterDaten Find(int MitarbeiterID)
         {
             int personID = -1; int versicherungsID = -1; string steuerID = string.Empty;
-            string berufsbezeichnung = string.Empty; 
-            string qualifikationen = string.Empty; DateTime eingestelltAm = DateTime.Now;
+            ; DateTime eingestelltAm = DateTime.Now;
             string gefeuertAm = string.Empty; int eingestelltBeiUser = -1;
             bool istaktive = false;
 
             if (clsMitarbeiterDatenZugriff.GetMitarbeiterbyID(MitarbeiterID, ref personID, ref versicherungsID,
-                ref steuerID, ref berufsbezeichnung, ref qualifikationen,
-                ref eingestelltAm, ref gefeuertAm, ref eingestelltBeiUser, ref istaktive))
+                ref steuerID, ref eingestelltAm, ref gefeuertAm, ref eingestelltBeiUser, ref istaktive))
             {
                 return new clsMitarbeiterDaten(MitarbeiterID, personID, versicherungsID, steuerID,
-               berufsbezeichnung, qualifikationen, eingestelltAm, 
-               gefeuertAm, eingestelltBeiUser,istaktive);
+               eingestelltAm, gefeuertAm, eingestelltBeiUser,istaktive);
             }
             else
                 return null;
@@ -121,18 +111,15 @@ namespace KlinkDatenSchicht
         public static clsMitarbeiterDaten FindByPersonID(int PersonID)
         {
             int MitarbeiterID = -1; int versicherungsID = -1; string steuerID = string.Empty;
-            string berufsbezeichnung = string.Empty; string abteilung = string.Empty;
-            string qualifikationen = string.Empty; DateTime eingestelltAm = DateTime.Now;
+           ; DateTime eingestelltAm = DateTime.Now;
             string gefeuertAm = string.Empty; int eingestelltBeiUser = -1;
             bool istaktive = false;
 
             if (clsMitarbeiterDatenZugriff.GetMitarbeiterbyPersonID(ref MitarbeiterID, PersonID, ref versicherungsID,
-                ref steuerID, ref berufsbezeichnung, ref qualifikationen,
-                ref eingestelltAm, ref gefeuertAm, ref eingestelltBeiUser, ref istaktive))
+                ref steuerID,ref eingestelltAm, ref gefeuertAm, ref eingestelltBeiUser, ref istaktive))
             {
                 return new clsMitarbeiterDaten(MitarbeiterID, PersonID, versicherungsID, steuerID,
-               berufsbezeichnung, qualifikationen, eingestelltAm,
-               gefeuertAm, eingestelltBeiUser, istaktive);
+               eingestelltAm,gefeuertAm, eingestelltBeiUser, istaktive);
             }
             else
                 return null;
