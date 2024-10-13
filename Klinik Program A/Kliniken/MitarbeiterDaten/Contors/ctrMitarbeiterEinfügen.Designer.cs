@@ -43,9 +43,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbVersichertBei = new System.Windows.Forms.ComboBox();
             this.gbMitarbeiterInfo = new System.Windows.Forms.GroupBox();
-            this.chbIstAktive = new System.Windows.Forms.CheckBox();
             this.txtGefeuertAm = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cbMitarbeiterZustand = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.gbMitarbeiterInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +66,7 @@
             this.txtSteuerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSteuerID.Location = new System.Drawing.Point(191, 98);
             this.txtSteuerID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSteuerID.MaxLength = 10;
             this.txtSteuerID.Name = "txtSteuerID";
             this.txtSteuerID.Size = new System.Drawing.Size(789, 31);
             this.txtSteuerID.TabIndex = 50;
@@ -194,7 +196,8 @@
             // 
             // gbMitarbeiterInfo
             // 
-            this.gbMitarbeiterInfo.Controls.Add(this.chbIstAktive);
+            this.gbMitarbeiterInfo.Controls.Add(this.label6);
+            this.gbMitarbeiterInfo.Controls.Add(this.cbMitarbeiterZustand);
             this.gbMitarbeiterInfo.Controls.Add(this.txtGefeuertAm);
             this.gbMitarbeiterInfo.Controls.Add(this.label1);
             this.gbMitarbeiterInfo.Controls.Add(this.cbVersichertBei);
@@ -219,22 +222,11 @@
             this.gbMitarbeiterInfo.Text = "Mitarbeiter Info";
             this.gbMitarbeiterInfo.Enter += new System.EventHandler(this.gbMitarbeiterInfo_Enter);
             // 
-            // chbIstAktive
-            // 
-            this.chbIstAktive.AutoSize = true;
-            this.chbIstAktive.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbIstAktive.ForeColor = System.Drawing.Color.Red;
-            this.chbIstAktive.Location = new System.Drawing.Point(699, 62);
-            this.chbIstAktive.Name = "chbIstAktive";
-            this.chbIstAktive.Size = new System.Drawing.Size(118, 29);
-            this.chbIstAktive.TabIndex = 58;
-            this.chbIstAktive.Text = "Ist Aktive";
-            this.chbIstAktive.UseVisualStyleBackColor = true;
-            // 
             // txtGefeuertAm
             // 
             this.txtGefeuertAm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGefeuertAm.Location = new System.Drawing.Point(189, 234);
+            this.txtGefeuertAm.MaxLength = 10;
             this.txtGefeuertAm.Name = "txtGefeuertAm";
             this.txtGefeuertAm.Size = new System.Drawing.Size(790, 31);
             this.txtGefeuertAm.TabIndex = 56;
@@ -242,6 +234,29 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // cbMitarbeiterZustand
+            // 
+            this.cbMitarbeiterZustand.FormattingEnabled = true;
+            this.cbMitarbeiterZustand.Items.AddRange(new object[] {
+            "Aktive",
+            "Inaktive",
+            "Gekündigt"});
+            this.cbMitarbeiterZustand.Location = new System.Drawing.Point(699, 63);
+            this.cbMitarbeiterZustand.Name = "cbMitarbeiterZustand";
+            this.cbMitarbeiterZustand.Size = new System.Drawing.Size(186, 32);
+            this.cbMitarbeiterZustand.TabIndex = 57;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(605, 69);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 20);
+            this.label6.TabIndex = 58;
+            this.label6.Text = "Zustand:";
             // 
             // ctrMitarbeiterEinfügen
             // 
@@ -277,6 +292,7 @@
         private System.Windows.Forms.GroupBox gbMitarbeiterInfo;
         private System.Windows.Forms.TextBox txtGefeuertAm;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.CheckBox chbIstAktive;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbMitarbeiterZustand;
     }
 }

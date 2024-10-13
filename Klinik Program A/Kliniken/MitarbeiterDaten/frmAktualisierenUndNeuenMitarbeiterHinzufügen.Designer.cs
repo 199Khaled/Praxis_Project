@@ -33,8 +33,6 @@
             this.btnAbbrechen = new System.Windows.Forms.Button();
             this.ctrPersonFilter1 = new Kliniken.ctrPersonFilter();
             this.ctrMitarbeiterEinfügen1 = new Kliniken.ctrMitarbeiterEinfügen();
-            this.ctrMitarbeiterEinfügen2 = new Kliniken.ctrMitarbeiterEinfügen();
-            this.ctrMitarbeiterEinfügen3 = new Kliniken.ctrMitarbeiterEinfügen();
             this.SuspendLayout();
             // 
             // lblTitel
@@ -54,7 +52,7 @@
             this.btnDatenSpeichern.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnDatenSpeichern.Enabled = false;
             this.btnDatenSpeichern.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatenSpeichern.Location = new System.Drawing.Point(222, 724);
+            this.btnDatenSpeichern.Location = new System.Drawing.Point(220, 541);
             this.btnDatenSpeichern.Name = "btnDatenSpeichern";
             this.btnDatenSpeichern.Size = new System.Drawing.Size(385, 52);
             this.btnDatenSpeichern.TabIndex = 2;
@@ -67,17 +65,18 @@
             this.btnAbbrechen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnAbbrechen.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbbrechen.Location = new System.Drawing.Point(613, 724);
+            this.btnAbbrechen.Location = new System.Drawing.Point(611, 541);
             this.btnAbbrechen.Name = "btnAbbrechen";
             this.btnAbbrechen.Size = new System.Drawing.Size(396, 52);
             this.btnAbbrechen.TabIndex = 3;
             this.btnAbbrechen.Text = "Abbrechen";
             this.btnAbbrechen.UseVisualStyleBackColor = false;
+            this.btnAbbrechen.Click += new System.EventHandler(this.btnAbbrechen_Click);
             // 
             // ctrPersonFilter1
             // 
             this.ctrPersonFilter1.FilterEnabled = true;
-            this.ctrPersonFilter1.Location = new System.Drawing.Point(12, 88);
+            this.ctrPersonFilter1.Location = new System.Drawing.Point(13, 74);
             this.ctrPersonFilter1.Name = "ctrPersonFilter1";
             this.ctrPersonFilter1.Size = new System.Drawing.Size(955, 98);
             this.ctrPersonFilter1.TabIndex = 5;
@@ -86,40 +85,19 @@
             // ctrMitarbeiterEinfügen1
             // 
             this.ctrMitarbeiterEinfügen1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrMitarbeiterEinfügen1.Location = new System.Drawing.Point(13, 179);
+            this.ctrMitarbeiterEinfügen1.Location = new System.Drawing.Point(13, 192);
             this.ctrMitarbeiterEinfügen1.Margin = new System.Windows.Forms.Padding(4);
             this.ctrMitarbeiterEinfügen1.Name = "ctrMitarbeiterEinfügen1";
-            this.ctrMitarbeiterEinfügen1.Size = new System.Drawing.Size(1031, 538);
+            this.ctrMitarbeiterEinfügen1.Size = new System.Drawing.Size(1031, 325);
             this.ctrMitarbeiterEinfügen1.TabIndex = 4;
             this.ctrMitarbeiterEinfügen1.OnMitarbeiterSelectedID += new System.Action<int>(this.ctrMitarbeiterEinfügen1_OnMitarbeiterSelectedID);
-            // 
-            // ctrMitarbeiterEinfügen2
-            // 
-            this.ctrMitarbeiterEinfügen2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrMitarbeiterEinfügen2.Location = new System.Drawing.Point(0, 0);
-            this.ctrMitarbeiterEinfügen2.Margin = new System.Windows.Forms.Padding(4);
-            this.ctrMitarbeiterEinfügen2.Name = "ctrMitarbeiterEinfügen2";
-            this.ctrMitarbeiterEinfügen2.Size = new System.Drawing.Size(1031, 529);
-            this.ctrMitarbeiterEinfügen2.TabIndex = 6;
-            // 
-            // ctrMitarbeiterEinfügen3
-            // 
-            this.ctrMitarbeiterEinfügen3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrMitarbeiterEinfügen3.Location = new System.Drawing.Point(8, 8);
-            this.ctrMitarbeiterEinfügen3.Margin = new System.Windows.Forms.Padding(4);
-            this.ctrMitarbeiterEinfügen3.Name = "ctrMitarbeiterEinfügen3";
-            this.ctrMitarbeiterEinfügen3.Size = new System.Drawing.Size(1031, 529);
-            this.ctrMitarbeiterEinfügen3.TabIndex = 7;
-            this.ctrMitarbeiterEinfügen3.Load += new System.EventHandler(this.ctrMitarbeiterEinfügen3_Load);
             // 
             // frmAktualisierenUndNeuenMitarbeiterHinzufügen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1045, 799);
-            this.Controls.Add(this.ctrMitarbeiterEinfügen3);
-            this.Controls.Add(this.ctrMitarbeiterEinfügen2);
+            this.ClientSize = new System.Drawing.Size(1045, 618);
             this.Controls.Add(this.ctrPersonFilter1);
             this.Controls.Add(this.ctrMitarbeiterEinfügen1);
             this.Controls.Add(this.btnAbbrechen);
@@ -139,7 +117,5 @@
         private System.Windows.Forms.Button btnAbbrechen;
         private ctrMitarbeiterEinfügen ctrMitarbeiterEinfügen1;
         private ctrPersonFilter ctrPersonFilter1;
-        private ctrMitarbeiterEinfügen ctrMitarbeiterEinfügen2;
-        private ctrMitarbeiterEinfügen ctrMitarbeiterEinfügen3;
     }
 }

@@ -18,7 +18,7 @@ namespace KlinikDatenZugriffsSchicht
 
         public static bool GetMitarbeiterbyID(int mitarbeiterID, ref int personID, ref int versicherungsID,
             ref string steuerID, ref  DateTime eingestelltAm, ref string GefeuertAm,
-            ref int EingestelltBeiUser, ref bool IstAktive)
+            ref int EingestelltBeiUser, ref string zustand)
         {
 
             bool isfound = false;
@@ -46,7 +46,7 @@ namespace KlinikDatenZugriffsSchicht
                                 eingestelltAm = (DateTime)reader["EingestelltAm"];
                                 GefeuertAm = (string)reader["GefeuertAm"];
                                 EingestelltBeiUser = (int)reader["EingestelltBeiUser"];
-                                IstAktive = (bool)reader["IstAktive"];
+                               zustand = (string)reader["Zustand"];
 
                             }
                         }
@@ -64,7 +64,7 @@ namespace KlinikDatenZugriffsSchicht
 
         public static bool GetMitarbeiterbyPersonID(ref int mitarbeiterID, int personID, ref int versicherungsID,
      ref string steuerID, ref DateTime eingestelltAm, ref string GefeuertAm,
-      ref int EingestelltBeiUser, ref bool IstAktive)
+      ref int EingestelltBeiUser, ref string zustand)
         {
 
             bool isfound = false;
@@ -91,7 +91,7 @@ namespace KlinikDatenZugriffsSchicht
                                 eingestelltAm = (DateTime)reader["EingestelltAm"];
                                 GefeuertAm = (string)reader["GefeuertAm"].ToString();
                                 EingestelltBeiUser = (int)reader["EingestelltBeiUser"];
-                                IstAktive = (bool)reader["IstAktive"];
+                                zustand = (string)reader["Zustand"];
 
                             }
                         }
@@ -167,7 +167,7 @@ namespace KlinikDatenZugriffsSchicht
         public static bool isMitarbeiterActiveForThisPersonID(int PersonID)
         {
             bool isActive = false;
-            string abfrage = "Select 1 From Mitarbeiter Where PersonID = @PersonID And IstAktive = 1";
+            string abfrage = "Select 1 From Mitarbeiter Where PersonID = @PersonID And Zustand = 'Aktive' ";
             try
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -192,7 +192,7 @@ namespace KlinikDatenZugriffsSchicht
         }
         public static int AddNewMitarbeiter(int personID, int versicherungsID,
            string steuerID, DateTime eingestelltAm, string GefeuertAm, 
-           int EingestelltBeiUser, bool IstAktive)
+           int EingestelltBeiUser, string zustand)
         {
             int MitarbeiterID = -1;
             try
@@ -210,7 +210,7 @@ namespace KlinikDatenZugriffsSchicht
                         command.Parameters.AddWithValue("@EingestelltAm", eingestelltAm); 
                         command.Parameters.AddWithValue("@GefeuertAm", GefeuertAm);
                         command.Parameters.AddWithValue("@EingestelltBeiUser", EingestelltBeiUser);
-                        command.Parameters.AddWithValue("@IstAktive", IstAktive);
+                        command.Parameters.AddWithValue("@Zustand", zustand);
 
                         // Output-Parameter für die neue MitarbeiterID hinzufügen
                         SqlParameter outputparam = new SqlParameter("@NewMitarbeiterID", SqlDbType.Int)
@@ -238,7 +238,7 @@ namespace KlinikDatenZugriffsSchicht
 
         public static bool UpdateMitarbeiter(int MitarbeiterID,int personID, int versicherungsID,
            string steuerID, DateTime eingestelltAm, string GefeuertAm,
-           int EingestelltBeiUser, bool IstAktive)
+           int EingestelltBeiUser, string zustand)
         {
             int RowAffected = 0;
             try
@@ -258,7 +258,7 @@ namespace KlinikDatenZugriffsSchicht
                         command.Parameters.AddWithValue("@EingestelltAm", eingestelltAm);
                         command.Parameters.AddWithValue("@GefeuertAm", GefeuertAm);
                         command.Parameters.AddWithValue("@EingestelltBeiUser", EingestelltBeiUser) ;
-                        command.Parameters.AddWithValue("@IstAktive", IstAktive);
+                        command.Parameters.AddWithValue("@Zustand", zustand);
  
                         connection.Open();
                        RowAffected =  command.ExecuteNonQuery();

@@ -41,6 +41,9 @@
             this.benutzerVerwaltungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.benutzerListeAnzeigenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.neuenBenutzerHinzufügenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mitarbeiterVerwaltungtoolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.neueMitarbeiterHinzufügenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountEinstellungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aktuellenBenutzerInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.passwortÄndernToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,11 +62,12 @@
             this.patientVerwaltungToolStripMenuItem,
             this.ärtzeVerwaltungToolStripMenuItem,
             this.benutzerVerwaltungToolStripMenuItem,
+            this.mitarbeiterVerwaltungtoolStripMenuItem1,
             this.accountEinstellungToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 6, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1180, 100);
+            this.menuStrip1.Size = new System.Drawing.Size(1377, 100);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -74,8 +78,8 @@
             this.PersonenListeAnzeigentoolStripMenuItem1});
             this.personalVerwaltungToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.personalVerwaltungToolStripMenuItem.Name = "personalVerwaltungToolStripMenuItem";
-            this.personalVerwaltungToolStripMenuItem.Size = new System.Drawing.Size(234, 92);
-            this.personalVerwaltungToolStripMenuItem.Text = "PersonalVerwaltung";
+            this.personalVerwaltungToolStripMenuItem.Size = new System.Drawing.Size(233, 92);
+            this.personalVerwaltungToolStripMenuItem.Text = "Personalverwaltung";
             // 
             // PersonenListeAnzeigentoolStripMenuItem1
             // 
@@ -94,8 +98,8 @@
             this.neuenPatientenHinzufügenToolStripMenuItem});
             this.patientVerwaltungToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.patientVerwaltungToolStripMenuItem.Name = "patientVerwaltungToolStripMenuItem";
-            this.patientVerwaltungToolStripMenuItem.Size = new System.Drawing.Size(218, 92);
-            this.patientVerwaltungToolStripMenuItem.Text = "PatientVerwaltung";
+            this.patientVerwaltungToolStripMenuItem.Size = new System.Drawing.Size(217, 92);
+            this.patientVerwaltungToolStripMenuItem.Text = "Patientverwaltung";
             // 
             // patientenListeAnzeigenToolStripMenuItem
             // 
@@ -123,8 +127,8 @@
             this.ärzteListeAnziegenToolStripMenuItem,
             this.neuenArztHinzufügenToolStripMenuItem});
             this.ärtzeVerwaltungToolStripMenuItem.Name = "ärtzeVerwaltungToolStripMenuItem";
-            this.ärtzeVerwaltungToolStripMenuItem.Size = new System.Drawing.Size(200, 92);
-            this.ärtzeVerwaltungToolStripMenuItem.Text = "ÄrtzeVerwaltung";
+            this.ärtzeVerwaltungToolStripMenuItem.Size = new System.Drawing.Size(199, 92);
+            this.ärtzeVerwaltungToolStripMenuItem.Text = "Ärtzeverwaltung";
             // 
             // fachrichtungenToolStripMenuItem
             // 
@@ -160,8 +164,8 @@
             this.benutzerListeAnzeigenToolStripMenuItem,
             this.neuenBenutzerHinzufügenToolStripMenuItem1});
             this.benutzerVerwaltungToolStripMenuItem.Name = "benutzerVerwaltungToolStripMenuItem";
-            this.benutzerVerwaltungToolStripMenuItem.Size = new System.Drawing.Size(240, 92);
-            this.benutzerVerwaltungToolStripMenuItem.Text = "BenutzerVerwaltung";
+            this.benutzerVerwaltungToolStripMenuItem.Size = new System.Drawing.Size(239, 92);
+            this.benutzerVerwaltungToolStripMenuItem.Text = "Benutzerverwaltung";
             // 
             // benutzerListeAnzeigenToolStripMenuItem
             // 
@@ -181,6 +185,33 @@
             this.neuenBenutzerHinzufügenToolStripMenuItem1.Text = "Neuen Benutzer hinzufügen";
             this.neuenBenutzerHinzufügenToolStripMenuItem1.Click += new System.EventHandler(this.neuenBenutzerHinzufügenToolStripMenuItem1_Click);
             // 
+            // mitarbeiterVerwaltungtoolStripMenuItem1
+            // 
+            this.mitarbeiterVerwaltungtoolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mitarToolStripMenuItem,
+            this.neueMitarbeiterHinzufügenToolStripMenuItem});
+            this.mitarbeiterVerwaltungtoolStripMenuItem1.Name = "mitarbeiterVerwaltungtoolStripMenuItem1";
+            this.mitarbeiterVerwaltungtoolStripMenuItem1.Size = new System.Drawing.Size(262, 92);
+            this.mitarbeiterVerwaltungtoolStripMenuItem1.Text = "Mitarbeiterverwaltung";
+            // 
+            // mitarToolStripMenuItem
+            // 
+            this.mitarToolStripMenuItem.Image = global::Kliniken.Properties.Resources.users_64;
+            this.mitarToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mitarToolStripMenuItem.Name = "mitarToolStripMenuItem";
+            this.mitarToolStripMenuItem.Size = new System.Drawing.Size(448, 70);
+            this.mitarToolStripMenuItem.Text = "Mitarbeiter Liste anzeigen";
+            this.mitarToolStripMenuItem.Click += new System.EventHandler(this.mitarToolStripMenuItem_Click);
+            // 
+            // neueMitarbeiterHinzufügenToolStripMenuItem
+            // 
+            this.neueMitarbeiterHinzufügenToolStripMenuItem.Image = global::Kliniken.Properties.Resources.users_64;
+            this.neueMitarbeiterHinzufügenToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.neueMitarbeiterHinzufügenToolStripMenuItem.Name = "neueMitarbeiterHinzufügenToolStripMenuItem";
+            this.neueMitarbeiterHinzufügenToolStripMenuItem.Size = new System.Drawing.Size(448, 70);
+            this.neueMitarbeiterHinzufügenToolStripMenuItem.Text = "Neue Mitarbeiter hinzufügen";
+            this.neueMitarbeiterHinzufügenToolStripMenuItem.Click += new System.EventHandler(this.neueMitarbeiterHinzufügenToolStripMenuItem_Click);
+            // 
             // accountEinstellungToolStripMenuItem
             // 
             this.accountEinstellungToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -189,8 +220,8 @@
             this.passwortÄndernToolStripMenuItem,
             this.abmeldenToolStripMenuItem});
             this.accountEinstellungToolStripMenuItem.Name = "accountEinstellungToolStripMenuItem";
-            this.accountEinstellungToolStripMenuItem.Size = new System.Drawing.Size(237, 92);
-            this.accountEinstellungToolStripMenuItem.Text = "Account Einstellung";
+            this.accountEinstellungToolStripMenuItem.Size = new System.Drawing.Size(231, 92);
+            this.accountEinstellungToolStripMenuItem.Text = "Accounteinstellung";
             // 
             // aktuellenBenutzerInfoToolStripMenuItem
             // 
@@ -223,7 +254,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1180, 639);
+            this.ClientSize = new System.Drawing.Size(1377, 639);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -257,5 +288,8 @@
         private System.Windows.Forms.ToolStripMenuItem passwortÄndernToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abmeldenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem PersonenListeAnzeigentoolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mitarbeiterVerwaltungtoolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mitarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem neueMitarbeiterHinzufügenToolStripMenuItem;
     }
 }

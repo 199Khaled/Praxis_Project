@@ -75,6 +75,7 @@ namespace Kliniken
             lblMitarbeiterID.Text = "[???]";
             lblErstelltBeiUser.Text = "[?????]";
             txtSteuerID.Clear();
+            cbMitarbeiterZustand.SelectedIndex = 0;
             dtpEingestelltAm.Value = DateTime.Now.Date;
             txtGefeuertAm.Clear();
  
@@ -97,7 +98,7 @@ namespace Kliniken
                 _mitarbeiter.GefeuertAm = "NULL";
 
             _mitarbeiter.EingestelltBeiUser = clsGlobaleKlasse.BenutzerDaten.BenutzerID;
-            _mitarbeiter.IstAtktive = chbIstAktive.Checked;
+            _mitarbeiter.Zustand = cbMitarbeiterZustand.SelectedItem as string;
         }
 
         public void LoadMitarbeiterDataByPersonID(int PersonID)
@@ -115,7 +116,7 @@ namespace Kliniken
       
                 dtpEingestelltAm.Value = _mitarbeiter.EingestelltAm;
                 txtGefeuertAm.Text = _mitarbeiter.GefeuertAm;
-                chbIstAktive.Checked = _mitarbeiter.IstAtktive;
+                cbMitarbeiterZustand.Text = _mitarbeiter.Zustand;
             }
             else
             {
@@ -139,7 +140,7 @@ namespace Kliniken
 
                 dtpEingestelltAm.Value = _mitarbeiter.EingestelltAm;
                 txtGefeuertAm.Text = _mitarbeiter.GefeuertAm;
-                chbIstAktive.Checked = _mitarbeiter.IstAtktive;
+                cbMitarbeiterZustand.Text = _mitarbeiter.Zustand;
             }
             else
             {

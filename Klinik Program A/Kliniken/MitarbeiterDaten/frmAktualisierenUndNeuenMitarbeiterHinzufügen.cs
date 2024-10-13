@@ -18,6 +18,10 @@ namespace Kliniken
         public enum enMode { AddNew = 1, UpdateByPersonID = 2, UpdateByMitarbeiterID = 3}
         private enMode _Mode = enMode.AddNew;
 
+        public frmAktualisierenUndNeuenMitarbeiterHinzufügen()
+        {
+            InitializeComponent();
+        }
         public frmAktualisierenUndNeuenMitarbeiterHinzufügen(enMode Mode, int PersonID)
         {
             InitializeComponent();
@@ -146,6 +150,11 @@ namespace Kliniken
         private void ctrMitarbeiterEinfügen3_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAbbrechen_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

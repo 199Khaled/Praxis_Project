@@ -109,6 +109,18 @@ namespace Kliniken
             frm.ShowDialog();
         }
 
+        private void neueMitarbeiterHinzufügenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAktualisierenUndNeuenMitarbeiterHinzufügen frm = new frmAktualisierenUndNeuenMitarbeiterHinzufügen();
+            frm.ShowDialog();
+            frm.Dispose();
+        }
 
+        private void mitarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMitarbeiterListeAnzeigen frm = new frmMitarbeiterListeAnzeigen();
+            frm.ShowDialog();
+            frm.Dispose();
+        }
     }
 }

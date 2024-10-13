@@ -26,10 +26,10 @@ namespace KlinkDatenSchicht
         public DateTime EingestelltAm { get; set; }
         public string GefeuertAm { get; set; }
         public int EingestelltBeiUser { get; set; }
-        public bool IstAtktive { get; set; }
+        public string Zustand { get; set; }
 
         private clsMitarbeiterDaten(int mitarbeiterID, int personID, int versicherungsID, string steuerID,
-            DateTime eingestelltAm,string gefeuertAm, int eingestelltBeiUser, bool istaktive)
+            DateTime eingestelltAm,string gefeuertAm, int eingestelltBeiUser, string zustand)
         {
             this.MitarbeiterID = mitarbeiterID;
             this.PersonID = personID;
@@ -38,8 +38,7 @@ namespace KlinkDatenSchicht
             this.EingestelltAm = eingestelltAm;
             this.GefeuertAm = gefeuertAm;
             this.EingestelltBeiUser = eingestelltBeiUser;
-            this.IstAtktive = istaktive;
-
+            this.Zustand = zustand;
             Mode = enMode.Update;
         }
 
@@ -51,8 +50,7 @@ namespace KlinkDatenSchicht
             this.EingestelltAm = DateTime.Now;
             this.GefeuertAm = string.Empty;
             this.EingestelltBeiUser = -1;
-            this.IstAtktive = true;
-
+            this.Zustand = string.Empty;
             Mode = enMode.addNew;
         }
 
@@ -60,7 +58,7 @@ namespace KlinkDatenSchicht
         {
             this.MitarbeiterID = clsMitarbeiterDatenZugriff.AddNewMitarbeiter(this.PersonID, this.VersicherungsID,
                 this.SteuerID, this.EingestelltAm,
-                this.GefeuertAm, this.EingestelltBeiUser, this.IstAtktive);
+                this.GefeuertAm, this.EingestelltBeiUser, this.Zustand);
 
             return (this.MitarbeiterID != -1);
         }
@@ -69,7 +67,7 @@ namespace KlinkDatenSchicht
         {
             return clsMitarbeiterDatenZugriff.UpdateMitarbeiter(this.MitarbeiterID, this.PersonID, this.VersicherungsID,
                 this.SteuerID, this.EingestelltAm,
-                this.GefeuertAm, this.EingestelltBeiUser,this.IstAtktive);
+                this.GefeuertAm, this.EingestelltBeiUser,this.Zustand);
         }
 
         public bool Save()
@@ -96,13 +94,13 @@ namespace KlinkDatenSchicht
             int personID = -1; int versicherungsID = -1; string steuerID = string.Empty;
             ; DateTime eingestelltAm = DateTime.Now;
             string gefeuertAm = string.Empty; int eingestelltBeiUser = -1;
-            bool istaktive = false;
+           string zustand = string.Empty;
 
             if (clsMitarbeiterDatenZugriff.GetMitarbeiterbyID(MitarbeiterID, ref personID, ref versicherungsID,
-                ref steuerID, ref eingestelltAm, ref gefeuertAm, ref eingestelltBeiUser, ref istaktive))
+                ref steuerID, ref eingestelltAm, ref gefeuertAm, ref eingestelltBeiUser, ref zustand))
             {
                 return new clsMitarbeiterDaten(MitarbeiterID, personID, versicherungsID, steuerID,
-               eingestelltAm, gefeuertAm, eingestelltBeiUser,istaktive);
+               eingestelltAm, gefeuertAm, eingestelltBeiUser,zustand);
             }
             else
                 return null;
@@ -113,13 +111,13 @@ namespace KlinkDatenSchicht
             int MitarbeiterID = -1; int versicherungsID = -1; string steuerID = string.Empty;
            ; DateTime eingestelltAm = DateTime.Now;
             string gefeuertAm = string.Empty; int eingestelltBeiUser = -1;
-            bool istaktive = false;
+            string zustand = string.Empty;
 
             if (clsMitarbeiterDatenZugriff.GetMitarbeiterbyPersonID(ref MitarbeiterID, PersonID, ref versicherungsID,
-                ref steuerID,ref eingestelltAm, ref gefeuertAm, ref eingestelltBeiUser, ref istaktive))
+                ref steuerID,ref eingestelltAm, ref gefeuertAm, ref eingestelltBeiUser, ref zustand))
             {
                 return new clsMitarbeiterDaten(MitarbeiterID, PersonID, versicherungsID, steuerID,
-               eingestelltAm,gefeuertAm, eingestelltBeiUser, istaktive);
+               eingestelltAm,gefeuertAm, eingestelltBeiUser, zustand);
             }
             else
                 return null;

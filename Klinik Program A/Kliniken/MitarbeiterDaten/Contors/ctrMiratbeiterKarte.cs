@@ -31,13 +31,12 @@ namespace Kliniken
             {
                 lblMitarbeiterID.Text = _mitarbeiterDaten.MitarbeiterID.ToString();
                 lblEingestelltBeiUser.Text = _mitarbeiterDaten.EingestelltBeiUser.ToString();
-                lblIstAktive.Text = _mitarbeiterDaten.IstAtktive.ToString();
                 txtSteuerID.Text = _mitarbeiterDaten.SteuerID;
          
                 txtEingestelltAm.Text = _mitarbeiterDaten.EingestelltAm.ToString();
                 txtGefeuertAm.Text = _mitarbeiterDaten.GefeuertAm;
-                txtQualifikationen.Text = _mitarbeiterDaten.Qualifikationen;
-                txtBerufsbezeichnung.Text = _mitarbeiterDaten.BerufsBezeichnung;
+                
+                
             }
             else
                 MessageBox.Show("Keine Mitarbeiter mit dieser ID wurde gefunden", "Fehlermeldung");

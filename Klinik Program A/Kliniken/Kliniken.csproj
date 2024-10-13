@@ -59,6 +59,12 @@
     <Compile Include="frmMitarbeiterDatenAnzeigen.Designer.cs">
       <DependentUpon>frmMitarbeiterDatenAnzeigen.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMitarbeiterListeAnzeigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMitarbeiterListeAnzeigen.Designer.cs">
+      <DependentUpon>frmMitarbeiterListeAnzeigen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MitarbeiterDaten\Contors\ctrMiratbeiterKarte.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMitarbeiterDatenAnzeigen.resx">
       <DependentUpon>frmMitarbeiterDatenAnzeigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMitarbeiterListeAnzeigen.resx">
+      <DependentUpon>frmMitarbeiterListeAnzeigen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MitarbeiterDaten\Contors\ctrMiratbeiterKarte.resx">
       <DependentUpon>ctrMiratbeiterKarte.cs</DependentUpon>
