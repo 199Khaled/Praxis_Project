@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Data;
 
 namespace KlinikDatenZugriffsSchicht
 {
@@ -139,6 +140,90 @@ namespace KlinikDatenZugriffsSchicht
                 }
             }
             return (BetroffeneZeile > 0);
+        }
+
+        public static DataTable GetAllBezahlungmethoden()
+        {
+            DataTable dt = new DataTable();
+            string abfrage = @"select * from GetAllBezahlungmethoden()";
+            string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlCommand commmand = new SqlCommand(abfrage, connection))
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = commmand.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                            dt.Load(reader);
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw;
+            }
+            return dt;
+        }
+
+        public static int GetBezahlungmethodeIDByName(string name)
+        {
+            int ID = -1;
+            string abfrage = @"Select dbo.GetBezahlungmethodeID(@Name)";
+            string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlCommand commmand = new SqlCommand(abfrage, connection))
+                {
+                    commmand.Parameters.AddWithValue("@Name", name);
+
+                    connection.Open();
+                    object result = commmand.ExecuteScalar();
+
+                    if (result != null && int.TryParse(result.ToString(), out int outputParameter))
+                        ID = outputParameter;
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw;
+            }
+            return ID;
+        }
+
+        public static bool FindByBezahlungmethodeID(int bezahlungmethodeID, ref string bezahlungmethodeName)
+        {
+            bool isfound = false;
+
+            string abfrage = @"Select  * from BezahlungMethode Where BezahlungmethodeID = @bezahlungmethodeID";
+            string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlCommand commmand = new SqlCommand(abfrage, connection))
+                {
+                    commmand.Parameters.AddWithValue("@bezahlungmethodeID", bezahlungmethodeID);
+
+                    connection.Open();
+                    using (SqlDataReader leser = commmand.ExecuteReader())
+                    {
+                        if (leser.Read())
+                        {
+                            isfound = true;
+
+                            bezahlungmethodeName = (string)leser["BezahlungmethodeName"];
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw;
+            }
+            return isfound;
+
         }
     }
 }

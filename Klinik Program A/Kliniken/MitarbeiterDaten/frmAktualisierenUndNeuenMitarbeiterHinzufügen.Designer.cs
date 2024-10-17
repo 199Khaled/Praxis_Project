@@ -48,13 +48,13 @@
             // 
             // btnDatenSpeichern
             // 
-            this.btnDatenSpeichern.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDatenSpeichern.BackColor = System.Drawing.Color.White;
             this.btnDatenSpeichern.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnDatenSpeichern.Enabled = false;
             this.btnDatenSpeichern.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatenSpeichern.Location = new System.Drawing.Point(220, 541);
+            this.btnDatenSpeichern.Location = new System.Drawing.Point(261, 539);
             this.btnDatenSpeichern.Name = "btnDatenSpeichern";
-            this.btnDatenSpeichern.Size = new System.Drawing.Size(385, 52);
+            this.btnDatenSpeichern.Size = new System.Drawing.Size(295, 41);
             this.btnDatenSpeichern.TabIndex = 2;
             this.btnDatenSpeichern.Text = "Daten Speichern";
             this.btnDatenSpeichern.UseVisualStyleBackColor = false;
@@ -62,12 +62,12 @@
             // 
             // btnAbbrechen
             // 
-            this.btnAbbrechen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAbbrechen.BackColor = System.Drawing.Color.White;
             this.btnAbbrechen.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbbrechen.Location = new System.Drawing.Point(611, 541);
+            this.btnAbbrechen.Location = new System.Drawing.Point(652, 539);
             this.btnAbbrechen.Name = "btnAbbrechen";
-            this.btnAbbrechen.Size = new System.Drawing.Size(396, 52);
+            this.btnAbbrechen.Size = new System.Drawing.Size(295, 41);
             this.btnAbbrechen.TabIndex = 3;
             this.btnAbbrechen.Text = "Abbrechen";
             this.btnAbbrechen.UseVisualStyleBackColor = false;
@@ -88,7 +88,7 @@
             this.ctrMitarbeiterEinfügen1.Location = new System.Drawing.Point(13, 192);
             this.ctrMitarbeiterEinfügen1.Margin = new System.Windows.Forms.Padding(4);
             this.ctrMitarbeiterEinfügen1.Name = "ctrMitarbeiterEinfügen1";
-            this.ctrMitarbeiterEinfügen1.Size = new System.Drawing.Size(1031, 325);
+            this.ctrMitarbeiterEinfügen1.Size = new System.Drawing.Size(1019, 325);
             this.ctrMitarbeiterEinfügen1.TabIndex = 4;
             this.ctrMitarbeiterEinfügen1.OnMitarbeiterSelectedID += new System.Action<int>(this.ctrMitarbeiterEinfügen1_OnMitarbeiterSelectedID);
             // 
@@ -96,8 +96,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1045, 618);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(1045, 592);
             this.Controls.Add(this.ctrPersonFilter1);
             this.Controls.Add(this.ctrMitarbeiterEinfügen1);
             this.Controls.Add(this.btnAbbrechen);

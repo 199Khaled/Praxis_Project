@@ -41,23 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsAbteilungDaten.cs" />
+    <Compile Include="clsArbeitszeitDaten.cs" />
     <Compile Include="clsArztDaten.cs" />
     <Compile Include="clsBenutzerDaten.cs" />
     <Compile Include="clsBezahlungDaten.cs" />
     <Compile Include="clsDatumDaten.cs" />
     <Compile Include="clsFachrichtungenDaten.cs" />
-    <Compile Include="clsKüchenPersonalDaten.cs" />
     <Compile Include="clsLänderDaten.cs" />
     <Compile Include="clsMitarbeiterDaten.cs" />
     <Compile Include="clsPatientDaten.cs" />
     <Compile Include="clsPersonal.cs" />
     <Compile Include="clsPersonDaten.cs" />
-    <Compile Include="clsReinigungsPersonalDaten.cs" />
     <Compile Include="clsRezeptDaten.cs" />
-    <Compile Include="clsSicherheitsdienstDaten.cs" />
     <Compile Include="clsTerminDaten.cs" />
-    <Compile Include="clsTransportdienstDaten.cs" />
+    <Compile Include="clsVergütungDaten.cs" />
     <Compile Include="clsVersicherungDaten.cs" />
+    <Compile Include="clsArbeitsVertragDaten.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

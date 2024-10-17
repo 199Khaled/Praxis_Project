@@ -38,7 +38,7 @@ namespace Kliniken
 
         private void ctrMitarbeiterEinfügen_Load(object sender, EventArgs e)
         {
-         
+          
         }
 
         private void _LoadVersicherungenDaten()
@@ -74,7 +74,9 @@ namespace Kliniken
             lblPersonID.Text = "[???]";
             lblMitarbeiterID.Text = "[???]";
             lblErstelltBeiUser.Text = "[?????]";
-            txtSteuerID.Clear();
+
+            txtSteuerID.Text = _ErzeugeSteuerID();
+
             cbMitarbeiterZustand.SelectedIndex = 0;
             dtpEingestelltAm.Value = DateTime.Now.Date;
             txtGefeuertAm.Clear();
@@ -82,22 +84,30 @@ namespace Kliniken
 
             _LoadVersicherungenDaten();
        
-            lblErstelltBeiUser.Text = clsGlobaleKlasse.BenutzerDaten.Rollenname;
+            //lblErstelltBeiUser.Text = clsGlobaleKlasse.BenutzerDaten.Rollenname;
+        }
+
+        private string _ErzeugeSteuerID()
+        {
+            Random zufälligezahl = new Random();
+            string steuerID = "";
+            
+            for(int i = 0; i < 11; i++)
+            {
+                steuerID += zufälligezahl.Next(0, 10);
+            }
+            return steuerID;
         }
         private void _FillMitarbeiterWithData()
         {
             _mitarbeiter.PersonID = Convert.ToInt32(lblPersonID.Text);
             _mitarbeiter.VersicherungsID = clsVersicherungDaten.Find(cbVersichertBei.SelectedItem as string).VersicherungID;
             _mitarbeiter.SteuerID = txtSteuerID.Text;
-
             _mitarbeiter.EingestelltAm = dtpEingestelltAm.Value.Date;
+            _mitarbeiter.GefeuertAm = txtGefeuertAm.Text;
 
-            if (!string.IsNullOrEmpty(txtGefeuertAm.Text))
-                _mitarbeiter.GefeuertAm = txtGefeuertAm.Text;
-            else
-                _mitarbeiter.GefeuertAm = "NULL";
-
-            _mitarbeiter.EingestelltBeiUser = clsGlobaleKlasse.BenutzerDaten.BenutzerID;
+            //nur zum Testen habe ich die Userspalte auf User3 gesetzt 
+            _mitarbeiter.EingestelltBeiUser = 3; //clsGlobaleKlasse.BenutzerDaten.BenutzerID; 
             _mitarbeiter.Zustand = cbMitarbeiterZustand.SelectedItem as string;
         }
 

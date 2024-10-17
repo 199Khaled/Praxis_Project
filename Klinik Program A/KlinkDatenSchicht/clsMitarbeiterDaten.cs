@@ -154,5 +154,20 @@ namespace KlinkDatenSchicht
         {
             return clsMitarbeiterDatenZugriff.GetAllMitarbeiter();
         }
+
+        public static bool deaktiviereMitarbeiter(int mitarbeiterID)
+        {
+            return clsMitarbeiterDatenZugriff.deaktiviereMitarbeiter(mitarbeiterID);
+        }
+
+        public static bool aktiviereMitarbeiter(int mitarbeiterID)
+        {
+            return clsMitarbeiterDatenZugriff.aktiviereMitarbeiter(mitarbeiterID);
+        }
+
+        public static bool HatMitarbeiterEinenArbeitsvertrag(int mitarbeiterId)
+        {
+            return clsMitarbeiterDatenZugriff.HatMitarbeiterEinenArbeitsvertrag(mitarbeiterId);
+        }
     }
 }

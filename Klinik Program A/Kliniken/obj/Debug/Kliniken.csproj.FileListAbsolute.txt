@@ -96,7 +96,6 @@ C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Klini
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmAktualisierenUndNeuenBenutzerHinzufügen.resources
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmBenutzerDatenAnzeigen.resources
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmBenutzerListeAnzeigen.resources
-C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmMitarbeiterDatenAnzeigen.resources
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.ctrMiratbeiterKarte.resources
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.ctrMitarbeiterEinfügen.resources
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.ctrPersonFilter.resources
@@ -130,3 +129,9 @@ C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Klini
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.exe
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.pdb
 C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmMitarbeiterListeAnzeigen.resources
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmMitarbeiterDetailsAnzeigen.resources
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmAktualiserenUndNeuenArbeitsvertragHinzufügen.resources
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmArbeitsvertagListeAnzeigen.resources
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmVergütungDetails.resources
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmArbeitszeitDetails.resources
+C:\Users\Hamssa\Desktop\Praxis_Project\Klinik Program A\Kliniken\obj\Debug\Kliniken.frmAbteilungDetails.resources

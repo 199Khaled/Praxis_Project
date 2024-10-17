@@ -71,11 +71,12 @@ namespace Kliniken
             }
 
             string FilterBy = cbFilterBei.SelectedItem as string;
-            int personID = int.Parse(txtbFilterWert.Text.Trim());
+            int personID = -1;
             switch (FilterBy)
             {
                 case "PersonID":
                     {
+                        personID = int.Parse(txtbFilterWert.Text.Trim());
                         bool ExistByPersonID = clsPersonDaten.IsPersonExist(personID);
                         if (ExistByPersonID)
                         {
@@ -93,7 +94,7 @@ namespace Kliniken
                         if(ExistByAusweisID)
                         {
                             //wir suchen nach personid durch AusweisId.
-                            int PersonID = clsPersonDaten.Find(txtbFilterWert.Text.Trim()).PersonID;
+                            personID = clsPersonDaten.Find(txtbFilterWert.Text.Trim()).PersonID;
                             if (OnSelectedPersonID != null)
                             {
                                 SelectedPersonID(personID);
@@ -107,7 +108,7 @@ namespace Kliniken
                         bool ExistByEmail = clsPersonDaten.IsPersonExistByEmailAdresse(txtbFilterWert.Text.Trim());
                         if(ExistByEmail)
                         {
-                            int PersonID = clsPersonDaten.FindByEmailAddresse(txtbFilterWert.Text.Trim()).PersonID;
+                            personID = clsPersonDaten.FindByEmailAddresse(txtbFilterWert.Text.Trim()).PersonID;
                             if (OnSelectedPersonID != null)
                             {
                                 SelectedPersonID(personID); // personid freigeben.

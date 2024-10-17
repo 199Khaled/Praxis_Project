@@ -21,19 +21,32 @@ namespace Kliniken
         public frmAktualisierenUndNeuenMitarbeiterHinzufügen()
         {
             InitializeComponent();
+
+            _Mode = enMode.AddNew;
         }
-        public frmAktualisierenUndNeuenMitarbeiterHinzufügen(enMode Mode, int PersonID)
+        public frmAktualisierenUndNeuenMitarbeiterHinzufügen(enMode Mode, int ID)
         {
             InitializeComponent();
 
             _Mode = Mode;
-            _PersonID = PersonID;
+            if (_Mode == enMode.UpdateByPersonID)
+                _PersonID = ID;
+            else
+                _MitarbeiterID = ID;
          
         }
         private void frmAktualisierenUndNeuenMitarbeiterHinzufügen_Load(object sender, EventArgs e)
         {
             if(_PersonID != -1)
                 ctrPersonFilter1.txtFilterWertSetzen(_PersonID);
+
+            if (_MitarbeiterID != -1)
+            {
+                ctrPersonFilter1.Enabled = false;
+                btnDatenSpeichern.Enabled = true;
+                _PassendeDatenSetzen();
+            }
+                
         }     
         private void btnDatenSpeichern_Click(object sender, EventArgs e)
         {
@@ -98,7 +111,7 @@ namespace Kliniken
                 else
                 {
                     MessageBox.Show("Diese Person ist bereits als Mitarbeiter aber nicht mehr Aktive im System defeniert!!",
-                        "Warnung", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        "Warnung", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 return false;
             }
@@ -145,6 +158,7 @@ namespace Kliniken
         private void ctrMitarbeiterEinfügen1_OnMitarbeiterSelectedID(int obj)
         {
             _MitarbeiterID = obj;
+
         }
 
         private void ctrMitarbeiterEinfügen3_Load(object sender, EventArgs e)

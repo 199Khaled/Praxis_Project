@@ -53,17 +53,47 @@
     <Compile Include="ArztDaten\frmAktualisierenUndNeueArztHinzufügen.Designer.cs">
       <DependentUpon>frmAktualisierenUndNeueArztHinzufügen.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMitarbeiterDatenAnzeigen.cs">
+    <Compile Include="frmAbteilungDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMitarbeiterDatenAnzeigen.Designer.cs">
-      <DependentUpon>frmMitarbeiterDatenAnzeigen.cs</DependentUpon>
+    <Compile Include="frmAbteilungDetails.Designer.cs">
+      <DependentUpon>frmAbteilungDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAktualiserenUndNeuenArbeitsvertragHinzufügen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAktualiserenUndNeuenArbeitsvertragHinzufügen.Designer.cs">
+      <DependentUpon>frmAktualiserenUndNeuenArbeitsvertragHinzufügen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArbeitsvertagListeAnzeigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArbeitsvertagListeAnzeigen.Designer.cs">
+      <DependentUpon>frmArbeitsvertagListeAnzeigen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArbeitszeitDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArbeitszeitDetails.Designer.cs">
+      <DependentUpon>frmArbeitszeitDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMitarbeiterDetailsAnzeigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMitarbeiterDetailsAnzeigen.Designer.cs">
+      <DependentUpon>frmMitarbeiterDetailsAnzeigen.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMitarbeiterListeAnzeigen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMitarbeiterListeAnzeigen.Designer.cs">
       <DependentUpon>frmMitarbeiterListeAnzeigen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVergütungDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVergütungDetails.Designer.cs">
+      <DependentUpon>frmVergütungDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="MitarbeiterDaten\Contors\ctrMiratbeiterKarte.cs">
       <SubType>UserControl</SubType>
@@ -256,11 +286,26 @@
     <EmbeddedResource Include="BenutzerDaten\frmBenutzerListeAnzeigen.resx">
       <DependentUpon>frmBenutzerListeAnzeigen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMitarbeiterDatenAnzeigen.resx">
-      <DependentUpon>frmMitarbeiterDatenAnzeigen.cs</DependentUpon>
+    <EmbeddedResource Include="frmAbteilungDetails.resx">
+      <DependentUpon>frmAbteilungDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAktualiserenUndNeuenArbeitsvertragHinzufügen.resx">
+      <DependentUpon>frmAktualiserenUndNeuenArbeitsvertragHinzufügen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArbeitsvertagListeAnzeigen.resx">
+      <DependentUpon>frmArbeitsvertagListeAnzeigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArbeitszeitDetails.resx">
+      <DependentUpon>frmArbeitszeitDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMitarbeiterDetailsAnzeigen.resx">
+      <DependentUpon>frmMitarbeiterDetailsAnzeigen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMitarbeiterListeAnzeigen.resx">
       <DependentUpon>frmMitarbeiterListeAnzeigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVergütungDetails.resx">
+      <DependentUpon>frmVergütungDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MitarbeiterDaten\Contors\ctrMiratbeiterKarte.resx">
       <DependentUpon>ctrMiratbeiterKarte.cs</DependentUpon>

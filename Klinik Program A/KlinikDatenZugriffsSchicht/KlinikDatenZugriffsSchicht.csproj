@@ -82,21 +82,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsAbteilungDatenzugriff.cs" />
+    <Compile Include="clsArbeitsvertragDatenzugriff.cs" />
+    <Compile Include="clsArbeitszeitDatenzugriff.cs" />
     <Compile Include="clsBenutzerDatenZugriff.cs" />
     <Compile Include="clsBezahlungenDatenZugriff.cs" />
     <Compile Include="clsDatumDatenZugriff.cs" />
     <Compile Include="clsFachrichtungenDatenZugriff.cs" />
-    <Compile Include="clsKüchenPersonalDatenZugriff.cs" />
     <Compile Include="clsLänderDatenZugriff.cs" />
     <Compile Include="clsMitarbeiterDatenZugriff.cs" />
     <Compile Include="clsPatientDatenZugriff.cs" />
     <Compile Include="clsPersonDatenZugriff.cs" />
-    <Compile Include="clsReinigungsPersonalDatenZugriff.cs" />
     <Compile Include="clsRezepteDatenZugriff.cs" />
-    <Compile Include="clsSicherheitsdienstDatenZugriff.cs" />
     <Compile Include="clsTerminDatenZugriff.cs" />
-    <Compile Include="clsTransportdienstDatenZugriff.cs" />
     <Compile Include="clsVerbindungMitDatenBank.cs" />
+    <Compile Include="clsVergütungDatenzugriff.cs" />
     <Compile Include="clsVersicherungenDatenZugriff.cs" />
     <Compile Include="clsÄrzteDatenZugriff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

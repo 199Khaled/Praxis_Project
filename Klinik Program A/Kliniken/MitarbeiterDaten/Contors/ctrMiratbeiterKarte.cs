@@ -29,19 +29,24 @@ namespace Kliniken
 
             if (_mitarbeiterDaten != null)
             {
-                lblMitarbeiterID.Text = _mitarbeiterDaten.MitarbeiterID.ToString();
-                lblEingestelltBeiUser.Text = _mitarbeiterDaten.EingestelltBeiUser.ToString();
-                txtSteuerID.Text = _mitarbeiterDaten.SteuerID;
-         
+                txtMitarbeiterID.Text = _mitarbeiterDaten.MitarbeiterID.ToString();
+                txtVollname.Text = _mitarbeiterDaten.Vollname;
+                txtUserID.Text = _mitarbeiterDaten.EingestelltBeiUser.ToString();
+                txtVersicherung.Text = clsVersicherungDaten.Find(_mitarbeiterDaten.VersicherungsID).VersicherungsName;
+                txtSteuerID.Text = _mitarbeiterDaten.SteuerID;  
                 txtEingestelltAm.Text = _mitarbeiterDaten.EingestelltAm.ToString();
                 txtGefeuertAm.Text = _mitarbeiterDaten.GefeuertAm;
-                
+                txtZustand.Text = _mitarbeiterDaten.Zustand;
+                txtAbteilung.Text = "Muss noch gemacht werden!";
                 
             }
             else
                 MessageBox.Show("Keine Mitarbeiter mit dieser ID wurde gefunden", "Fehlermeldung");
         }
-  
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -22,7 +22,8 @@ namespace KlinikDatenZugriffsSchicht
         {
 
             bool isfound = false;
-            string abfrage = @"Select * From GetMitarbeiterByID(@MitarbeiterID)";
+            string abfrage = @"SELECT PersonID, VersicherungsID, SteuerID, EingestelltAm, GefeuertAm, EingestelltBeiUser, Zustand 
+                       FROM GetMitarbeiterByID(@MitarbeiterID)";
             try
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -69,7 +70,8 @@ namespace KlinikDatenZugriffsSchicht
 
             bool isfound = false;
 
-            string abfrage = @"Select * From Mitarbeiter where PersonID = @PersonID";
+            string abfrage = @"SELECT PersonID, VersicherungsID, SteuerID, EingestelltAm, GefeuertAm, EingestelltBeiUser, Zustand 
+                       FROM GetMitarbeiterByPersonID(@PersonID)";
             try
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -213,13 +215,13 @@ namespace KlinikDatenZugriffsSchicht
                         command.Parameters.AddWithValue("@Zustand", zustand);
 
                         // Output-Parameter für die neue MitarbeiterID hinzufügen
-                        SqlParameter outputparam = new SqlParameter("@NewMitarbeiterID", SqlDbType.Int)
-                        {
-                            // Diraction wird auf Output gesetzt.
-                            Direction = ParameterDirection.Output
-                        };
+                        SqlParameter outputparam = new SqlParameter("@NewMitarbeiterID", SqlDbType.Int);
+
+                        // Diraction wird auf Output gesetzt.
+                        outputparam.Direction = ParameterDirection.Output;                     
                         command.Parameters.Add(outputparam);
 
+                        //Open the connection and execute the command
                         connection.Open();
                         command.ExecuteNonQuery();
 
@@ -259,9 +261,15 @@ namespace KlinikDatenZugriffsSchicht
                         command.Parameters.AddWithValue("@GefeuertAm", GefeuertAm);
                         command.Parameters.AddWithValue("@EingestelltBeiUser", EingestelltBeiUser) ;
                         command.Parameters.AddWithValue("@Zustand", zustand);
- 
+
+                        SqlParameter output = new SqlParameter("@RowAffected", SqlDbType.Int);
+                        output.Direction = ParameterDirection.Output;
+                        command.Parameters.Add(output);
+
                         connection.Open();
-                       RowAffected =  command.ExecuteNonQuery();
+                        command.ExecuteNonQuery();
+
+                        RowAffected = (int)output.Value;
                     }
                 }
             }
@@ -286,8 +294,16 @@ namespace KlinikDatenZugriffsSchicht
                         command.CommandType = CommandType.StoredProcedure;
                         command.Parameters.AddWithValue("@MitarbeiterID", MitarbeiterID);
 
+                        //den output parameter für die betroffenezeile hinzufügen 
+                        SqlParameter outputParameter = new SqlParameter("@RowAffected", SqlDbType.Int);
+                        outputParameter.Direction = ParameterDirection.Output;
+                        command.Parameters.Add(outputParameter);
+
+                        //Öffene die verbindung und ausführe den Befehl
                         connection.Open();
-                        RowAffected = command.ExecuteNonQuery();
+                        command.ExecuteNonQuery();
+
+                        RowAffected = (int)outputParameter.Value;
                     }
                 }
             }
@@ -296,6 +312,84 @@ namespace KlinikDatenZugriffsSchicht
                 throw;
             }
             return RowAffected > 0;
+        }
+
+        public static bool deaktiviereMitarbeiter(int mitarbeiterID)
+        {
+            int rowAffected = 0;
+            string abfrage = @"Update Mitarbeiter
+                                  set Zustand = 'Inaktive'
+                                      where  Zustand = 'Aktive' And MitarbeiterID = @mitarbeiterID"  ;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    using(SqlCommand command = new SqlCommand(abfrage, connection))
+                    {
+                        command.Parameters.AddWithValue("@mitarbeiterID", mitarbeiterID);
+
+                        connection.Open();
+                        rowAffected = command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw;
+            }
+            return rowAffected > 0;
+        }
+
+        public static bool aktiviereMitarbeiter(int mitarbeiterID)
+        {
+            int rowAffected = 0;
+            string abfrage = @"Update Mitarbeiter
+                                  set Zustand = 'Aktive'
+                                      where  Zustand = 'Inaktive'  And  MitarbeiterID = @mitarbeiterID";
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(abfrage, connection))
+                    {
+                        command.Parameters.AddWithValue("@mitarbeiterID", mitarbeiterID);
+
+                        connection.Open();
+                        rowAffected = command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw;
+            }
+            return rowAffected > 0;
+        }
+
+        public static bool HatMitarbeiterEinenArbeitsvertrag(int mitarbeiterID)
+        {
+            bool hatVertrag = false;
+            string abfrage = @"Select dbo.HatMitarbeiterEinenArbeitsVertrag(@MitarbeiterID)";
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(abfrage, connection))
+                    {
+                        command.Parameters.AddWithValue("@MitarbeiterID", mitarbeiterID);
+
+                        connection.Open();
+                      object result = command.ExecuteScalar();
+                        if (result != null)
+                            hatVertrag = Convert.ToBoolean(result);
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw;
+            }
+            return hatVertrag;
         }
 
     }

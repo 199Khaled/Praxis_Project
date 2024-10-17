@@ -1,6 +1,7 @@
 ﻿using KlinikDatenZugriffsSchicht;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -90,6 +91,42 @@ namespace KlinkDatenSchicht
                     return _Update();
             }
             return false;
+        }
+
+       
+    }
+
+    public class clsBezalungmethodenDaten
+    {
+        public int bezahlungmethodeID { get; set; }
+        public string bezahlungmethodename { get; set; }
+
+        private clsBezalungmethodenDaten(int bezahlungmethodeID, string bezahlungmethodename)
+        {
+            this.bezahlungmethodeID = bezahlungmethodeID;
+            this.bezahlungmethodename = bezahlungmethodename;
+        }
+
+        public static DataTable GetAllBezahlungmethoden()
+        {
+            return clsBezahlungenDatenZugriff.GetAllBezahlungmethoden();
+        }
+
+        public static int GetBezahlungmethodeID(string name)
+        {
+            return clsBezahlungenDatenZugriff.GetBezahlungmethodeIDByName(name);
+        }
+
+        public static clsBezalungmethodenDaten FindByBezahlungmethodeID(int ID)
+        {
+            string bezahlungmethodename = string.Empty;
+
+            if (clsBezahlungenDatenZugriff.FindByBezahlungmethodeID(ID, ref bezahlungmethodename))
+            {
+                return new clsBezalungmethodenDaten(ID, bezahlungmethodename);
+            }
+            else
+                return null;
         }
     }
 }

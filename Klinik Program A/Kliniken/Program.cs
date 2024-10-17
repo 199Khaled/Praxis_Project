@@ -28,11 +28,12 @@ namespace Kliniken
             // Application.Run(new frmAktualisierenUndNeueBezahlungHinzufügen());
             //Application.Run(new frmTerminenListeAnzeigen());
             // Application.Run(new frmAktualisierenUndNeuenBenutzerHinzufügen());
-            Application.Run(new frmLoginScreen());
+           // Application.Run(new frmLoginScreen());
             // Application.Run(new frmBenutzerListeAnzeigen());
             //Application.Run(new frmDatenTablleAnzeigen());
             //Hallo world
-            //Application.Run(new frmMitarbeiterListeAnzeigen());
+            Application.Run(new frmMitarbeiterListeAnzeigen());
+           // Application.Run(new frmAktualiserenUndNeuenArbeitsvertragHinzufügen());
 
         }
     }

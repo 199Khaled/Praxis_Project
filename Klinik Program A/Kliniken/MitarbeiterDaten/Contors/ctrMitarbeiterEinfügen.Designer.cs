@@ -43,10 +43,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbVersichertBei = new System.Windows.Forms.ComboBox();
             this.gbMitarbeiterInfo = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbMitarbeiterZustand = new System.Windows.Forms.ComboBox();
             this.txtGefeuertAm = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.cbMitarbeiterZustand = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.gbMitarbeiterInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +66,7 @@
             this.txtSteuerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSteuerID.Location = new System.Drawing.Point(191, 98);
             this.txtSteuerID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSteuerID.MaxLength = 10;
+            this.txtSteuerID.MaxLength = 12;
             this.txtSteuerID.Name = "txtSteuerID";
             this.txtSteuerID.Size = new System.Drawing.Size(789, 31);
             this.txtSteuerID.TabIndex = 50;
@@ -222,18 +222,16 @@
             this.gbMitarbeiterInfo.Text = "Mitarbeiter Info";
             this.gbMitarbeiterInfo.Enter += new System.EventHandler(this.gbMitarbeiterInfo_Enter);
             // 
-            // txtGefeuertAm
+            // label6
             // 
-            this.txtGefeuertAm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGefeuertAm.Location = new System.Drawing.Point(189, 234);
-            this.txtGefeuertAm.MaxLength = 10;
-            this.txtGefeuertAm.Name = "txtGefeuertAm";
-            this.txtGefeuertAm.Size = new System.Drawing.Size(790, 31);
-            this.txtGefeuertAm.TabIndex = 56;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(605, 69);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 20);
+            this.label6.TabIndex = 58;
+            this.label6.Text = "Zustand:";
             // 
             // cbMitarbeiterZustand
             // 
@@ -247,16 +245,18 @@
             this.cbMitarbeiterZustand.Size = new System.Drawing.Size(186, 32);
             this.cbMitarbeiterZustand.TabIndex = 57;
             // 
-            // label6
+            // txtGefeuertAm
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(605, 69);
-            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 20);
-            this.label6.TabIndex = 58;
-            this.label6.Text = "Zustand:";
+            this.txtGefeuertAm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGefeuertAm.Location = new System.Drawing.Point(189, 234);
+            this.txtGefeuertAm.MaxLength = 10;
+            this.txtGefeuertAm.Name = "txtGefeuertAm";
+            this.txtGefeuertAm.Size = new System.Drawing.Size(790, 31);
+            this.txtGefeuertAm.TabIndex = 56;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // ctrMitarbeiterEinfügen
             // 
